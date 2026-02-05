@@ -1,0 +1,42 @@
+.logo__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 91px;
+  }
+}
+
+@media (width >= 768px) {
+  .logo__picture {
+    justify-content: start;
+  }
+}
+
+.logo__picture picture {
+  display: flex;
+  align-items: center;
+}
+
+.nexa .logo__picture img {
+  height: 15px;
+}
+
+@media (width >= 1200px) {
+  .logo__picture img {
+    height: 18px;
+    width: 100%;
+  }
+}
+@media (width >= 768px) {
+  .nexa .right .logo__picture img {
+    height: 18px;
+  }
+}
+
+@media (width < 768px) {
+  .nexa .top-logo .logo-wrapper .logo__picture img {
+    width: 135.514px;
+    height: 15px;
+  }
+}

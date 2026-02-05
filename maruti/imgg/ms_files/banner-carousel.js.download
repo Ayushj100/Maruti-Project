@@ -1,0 +1,446 @@
+import { moveInstrumentation } from '../../commons/scripts/scripts.js';
+import { apiUtils, getPublishDomain, getVideoSrc, loadVideoJs, utility, waitForVideoJs } from '../../commons/utility/masterUtil.js';
+
+const ctaUtils = {
+  getLink(linkEl, textEl, targetEl, className) {
+    const link = linkEl?.querySelector('.button-container a') || linkEl?.querySelector('a');
+    if (link && !link.classList.contains('button')) {
+      link.classList.add('button');
+    }
+    const target = targetEl?.textContent?.trim() || '_self';
+    link?.setAttribute('target', target);
+    const text = textEl?.textContent?.trim() || '';
+    if (link) {
+      link.innerHTML = '';
+      link.insertAdjacentHTML('beforeend', utility.sanitizeHtml(text));
+      if (className && link) {
+        link.classList.add(className);
+      }
+      link.setAttribute('title', text);
+    }
+    return link;
+  },
+};
+
+export default function decorate(block) {
+  const [mainDiv, disclaimerDiv, termsDiv, termsDescDiv, ...childDiv] = block.children;
+
+  const isMobile = window.matchMedia('(max-width: 1023px)');
+  const isHdVideo = false;
+
+  function getLocalStorage(key) {
+    const item = localStorage.getItem(key);
+    return item ? JSON.parse(item) : null;
+  }
+  let forCode = getLocalStorage('selected-location')?.forCode || '08';
+  let carsObject;
+  const modelList = [];
+  const [exploreCTATextEl, exploreCTALinkEl, exploreTargetEl, byoCtaTextEl, byoCtaLinkEl, byoTargetEl, exShoroomTextEl, firstPosterEl, titleElType, mobFirstPosterEl] =
+    mainDiv.children[0].children;
+  const deskFirstPoster = firstPosterEl?.querySelector('source')?.srcset || '';
+  const mobFirstPoster = mobFirstPosterEl?.querySelector('img')?.src || '';
+  const exShowroomText = exShoroomTextEl?.textContent || '';
+  const titleEl = titleElType?.textContent || 'div';
+  let firstPoster;
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    firstPoster = deskFirstPoster;
+    firstPosterEl?.remove();
+  } else {
+    firstPoster = mobFirstPoster;
+    mobFirstPosterEl?.remove();
+  }
+
+  const primaryCta = ctaUtils.getLink(exploreCTALinkEl, exploreCTATextEl, exploreTargetEl, 'button-primary-white');
+
+  const secondaryCta = ctaUtils.getLink(byoCtaLinkEl, byoCtaTextEl, byoTargetEl, 'button-secondary-white');
+
+  const disclaimer = disclaimerDiv?.textContent.trim() || '';
+  const termsConditionText = termsDiv?.textContent.trim() || '';
+  const termsConditionsDescription = termsDescDiv?.innerHTML.trim() || '';
+
+  const getVideoObject = element => {
+    const anchorElement = element?.querySelector('a');
+    if (anchorElement) {
+      return {
+        name: anchorElement.textContent.trim(),
+        url: anchorElement.href || '',
+      };
+    }
+    return {
+      url: '',
+      name: null,
+    };
+  };
+
+  function getCurrency() {
+    const currencySymbol = () =>
+      new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+      })
+        .formatToParts(1)
+        .find(x => x.type === 'currency').value;
+
+    return currencySymbol();
+  }
+
+  function getFormattedPrice(price) {
+    // Remove any non-numeric characters except for periods (.) and trim any extra spaces
+    const NumberPrice = price;
+
+    // Create a number formatter for INR currency
+    const formatter = new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0,
+    });
+
+    // Assuming helper.getCurrency() returns the currency symbol (INR)
+    const currency = getCurrency();
+
+    // Format the price and return it with the currency symbol
+    return `${currency} ${formatter.format(NumberPrice).replace(currency, '').replaceAll(',', ' ')}`;
+  }
+
+  function getModelInfo(jsonData) {
+    const transformedData = {};
+    jsonData.data.carModelList.items.forEach(item => {
+      const { modelCd } = item;
+      transformedData[modelCd] = {
+        carLogoImage: item.carLogoImage,
+        logoImageAltText: item.logoImageAltText,
+        exShowroomPrice: item.exShowroomPrice,
+        modelTagline: item.modelTagline,
+      };
+    });
+    return transformedData;
+  }
+
+  async function fetchCarDetails() {
+    try {
+      const publishDomain = await getPublishDomain();
+      const graphQlEndpointurl = `${publishDomain}/graphql/execute.json/msil-platform/arenaBannerList`;
+      const response = await fetch(graphQlEndpointurl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      return {};
+    }
+  }
+
+  const updateModelDetailsInSlides = async models => {
+    const carResponse = await fetchCarDetails();
+    carsObject = getModelInfo(carResponse);
+    if (models.length > 0) {
+      models.forEach((modelCode, idx) => {
+        const o = carsObject[modelCode];
+        // eslint-disable-next-line no-underscore-dangle
+        const carLogoPath = o?.carLogoImage._dmS7Url || '';
+        const carLogoAltText = o?.logoImageAltText || '';
+        const modelTagLine = o?.modelTagline || '';
+
+        const slideElem = block.querySelector(`.carousel__slide[data-slide-index="${idx}"]`);
+        if (slideElem) {
+          slideElem.querySelector('.pre-title').textContent = modelTagLine;
+          const imgElem = slideElem.querySelector('.logo-image');
+          imgElem.innerHTML = `<img src="${carLogoPath}" alt="${carLogoAltText}">`;
+        }
+      });
+    }
+  };
+
+  const updateBannerItems = carList => {
+    const bannerItems = carList
+      .map((itemEl, i) => {
+        const [modelCodeEl, desktopVideoEl, videoPosterEl, mobileVideoEl, mobVideoPosterEl] = itemEl.children[0].children;
+
+        const modelCode = modelCodeEl?.textContent?.trim() || '';
+        const desktopVideo = getVideoObject(desktopVideoEl);
+        const desktopPosterImg = videoPosterEl?.querySelector('source')?.srcset || '';
+        const mobPosterImg = mobVideoPosterEl?.querySelector('img')?.src || '';
+        const mobileVideo = getVideoObject(mobileVideoEl);
+
+        let posterImg;
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+          posterImg = desktopPosterImg;
+        } else {
+          posterImg = mobPosterImg || desktopPosterImg;
+        }
+
+        modelList.push(modelCode);
+
+        itemEl.setAttribute('data-slide-index', i);
+        const originalSrc = isHdVideo
+          ? getVideoSrc({
+              hd: 'true',
+              mobVideoUrl: mobileVideo?.url,
+              mobName: mobileVideo?.name,
+              deskVideoUrl: desktopVideo.url,
+              deskName: desktopVideo.name,
+            })
+          : '';
+        itemEl.innerHTML = `
+          <img src="${posterImg || firstPoster}" alt="" class="hidden" />
+          <video class="hero-banner-video" width="100%" muted autoplay loop playsinline preload="none" 
+              ${isHdVideo ? `src="${originalSrc}" data-hd="true"` : ''}
+              poster="${posterImg || firstPoster}"
+              data-mob-poster="${mobPosterImg}" data-desk-poster="${desktopPosterImg}"
+              data-desk-video-url="${desktopVideo.url}" data-mob-video-url="${mobileVideo.url}"
+              data-desk-name="${desktopVideo.name}"  data-mob-name="${mobileVideo.name}"></video>
+          <div class="content-overlay">
+          <div class="container">
+            <${titleEl} class="pre-title"></${titleEl}>
+            <div class="logo-image"></div>
+            <div class="ex-showroom-details">
+              <div class="ex-showroom-text">
+                <span>${exShowroomText}</span></div>
+              <div class="ex-showroom-price"  data-car-model=${modelCode.trim().toUpperCase()}><span></span></div>
+            </div>
+            <div class="carousal-cta">
+              ${primaryCta ? primaryCta.outerHTML : ''}
+              ${secondaryCta ? secondaryCta.outerHTML : ''}
+            </div>
+            ${
+              termsConditionText
+                ? `<div class="term-condition">
+                     <span class="term-condition-text">${termsConditionText}</span>
+                     <div class="termsConditionPopup">${termsConditionsDescription}</div>
+            </div> `
+                : ''
+            }
+            </div>
+          </div>
+      `;
+        if (i === 0) {
+          itemEl.classList.add('carousel__slide', 'carousel__slide--active');
+        } else {
+          itemEl.classList.add('carousel__slide', 'hidden');
+        }
+        moveInstrumentation(itemEl, itemEl.firstElementChild);
+        return itemEl.outerHTML;
+      })
+      .join('');
+    return bannerItems;
+  };
+  block.innerHTML = utility.sanitizeHtml(`
+    <div class="hero-banner-carousel__container">
+        <div class="hero-banner-carousel__carousel">
+            <div class="hero-banner-carousel__slides carousel__slides">${updateBannerItems(childDiv)}</div>
+        </div>
+    </div>
+    `);
+
+  async function setSlider() {
+    const { default: carouselUtils } = await import('../../utility/carouselUtils.js');
+    block.querySelectorAll('.carousel__slide.hidden').forEach(slide => slide.classList.remove('hidden'));
+    carouselUtils.init(block.querySelector('.hero-banner-carousel__carousel'), 'hero-banner-carousel__slides', 'fade', {
+      onChange: (currentSlide, targetSlide) => {
+        currentSlide.querySelector('video')?.pause();
+        targetSlide.querySelector('video')?.play();
+      },
+      dotsInteractive: false,
+    });
+  }
+
+  const initVideos = async () => {
+    const bannerVideos = document.querySelectorAll('.banner-carousel-wrapper .hero-banner-carousel__slides .carousel__slide video');
+    await bannerVideos.forEach(async videoEl => {
+      videoEl.classList.add('video-js', 'banner-carousel__video');
+      videoEl.id = `video-${Math.random().toString(36).substr(2, 9)}`;
+      videoEl.setAttribute('playsinline', '');
+
+      const videoSrc = isMobile.matches ? videoEl.getAttribute('data-mob-video-url') : videoEl.getAttribute('data-desk-video-url');
+      const src = utility.getDeviceSpecificVideoUrl(videoSrc);
+
+      const config = {
+        autoplay: false,
+        fill: true,
+        hasCustomPlayButton: false,
+        loop: false,
+        muted: true,
+        poster: null,
+        preload: 'auto',
+        controls: false,
+      };
+      // eslint-disable-next-line no-undef
+      const player = await videojs(videoEl, config);
+      player.src(src);
+      player.on('timeupdate', () => {
+        const bar = document.querySelector('.dot-progress-fill');
+        const percent = (player.currentTime() / player.duration()) * 100;
+        if (bar && percent > .4) {
+          bar.style.display = 'block';
+        }
+      });
+      player.on('ended', () => {
+        const bar = document.querySelector('.dot-progress-fill');
+        player.currentTime(0);
+        player.play();
+        if (bar) {
+          bar.style.display = 'none';
+        }
+      });
+    });
+  };
+
+  function setDataLayer(analytics) {
+    const overlays = block.querySelectorAll('.content-overlay');
+    const server = document.location.hostname;
+    const currentPagePath = window.location.pathname;
+    const pageName = document.title;
+    const url = document.location.href;
+    const blockName = block.getAttribute('data-block-name');
+    overlays.forEach(overlay => {
+      const exploreButton = overlay.querySelector('.button-primary-white');
+      const byoButton = overlay.querySelector('.button-secondary-white');
+
+      const blockTitle = overlay.querySelector('.pre-title')?.textContent || '';
+      const event = 'web.webInteraction.linkClicks';
+      exploreButton.addEventListener('click', async () => {
+        const cityName = utility.getLocation();
+        const selectedLanguage = utility.getLanguage(currentPagePath);
+        const linkType = utility.getLinkType(exploreButton);
+        const webInteractionName = exploreButton.textContent;
+        const componentType = 'button';
+        const authenticatedState = analytics.checkAuthStatus();
+        const data = {
+          event,
+          authenticatedState,
+          blockName,
+          blockTitle,
+          componentType,
+          server,
+          pageName,
+          url,
+          cityName,
+          selectedLanguage,
+          linkType,
+          webInteractionName,
+        };
+        analytics.pushToDataLayer(data);
+      });
+      byoButton.addEventListener('click', async () => {
+        const cityName = utility.getLocation();
+        const selectedLanguage = utility.getLanguage(currentPagePath);
+        const linkType = utility.getLinkType(byoButton);
+        const webInteractionName = byoButton.textContent;
+        const componentType = 'button';
+        const authenticatedState = analytics.checkAuthStatus();
+        const data = {
+          event,
+          authenticatedState,
+          blockName,
+          blockTitle,
+          componentType,
+          server,
+          pageName,
+          url,
+          cityName,
+          selectedLanguage,
+          linkType,
+          webInteractionName,
+        };
+        analytics.pushToDataLayer(data);
+      });
+    });
+  }
+
+  function handleTermsPopup() {
+    const termsConditions = block.querySelectorAll('.term-condition');
+    const termsConditionPopup = block.querySelector('.termsConditionPopup');
+    termsConditions.forEach(termsCondition => {
+      termsCondition.addEventListener('click', event => event.preventDefault());
+      termsCondition.addEventListener('mouseenter', () => {
+        termsConditionPopup.classList.add('showTermsPopup'); // Show on hover
+      });
+
+      termsCondition.addEventListener('mouseleave', () => {
+        termsConditionPopup.classList.remove('showTermsPopup'); // Hide when hover ends
+      });
+    });
+  }
+
+  function getCarPrice(priceObject, carModel) {
+    let exShowroomPrice = priceObject?.exShowroomData?.[carModel]?.variants?.[0]?.exShowroomPrice || '';
+    if (exShowroomPrice) {
+      exShowroomPrice = getFormattedPrice(exShowroomPrice);
+      exShowroomPrice = utility.extractIntegerPart(exShowroomPrice);
+    }
+    return exShowroomPrice;
+  }
+
+  async function renderBlock() {
+    const heroBannerItems = block.querySelector('.hero-banner-carousel__slides');
+    block.querySelector('.hero-banner-carousel__container')?.setAttribute('data-item-length', heroBannerItems.querySelectorAll('.carousel__slide').length);
+
+    handleTermsPopup();
+
+    // non-blocking
+    apiUtils.updateExShowroomPrices(forCode, utility.setLocalStorage).then(priceObject => {
+      const priceElements = block.querySelectorAll('.ex-showroom-price[data-car-model]');
+      [...priceElements].forEach(elem => {
+        const modelCd = elem.dataset.carModel;
+        const price = getCarPrice(priceObject, modelCd);
+        elem.querySelector('span').textContent = price ? `${price}*` : '';
+      });
+    });
+
+    setTimeout(() => {
+      updateModelDetailsInSlides(modelList);
+    }, 1);
+  }
+
+  const initializeVideos = async () => {
+    if (utility.isEditorMode(block)) {
+      const publishDomain = await getPublishDomain();
+      loadVideoJs(publishDomain);
+    } else {
+      loadVideoJs('');
+    }
+    waitForVideoJs().then(() => {
+      initVideos();
+    });
+  };
+
+  if (!isHdVideo) {
+    setTimeout(() => {
+      initializeVideos();
+    }, 0);
+  }
+
+  const delayedCalls = () => {
+    setSlider();
+    import('../../utility/analytics.js').then(({ default: analytics }) => {
+      setDataLayer(analytics);
+    });
+  };
+
+  renderBlock();
+
+  if (Window.DELAYED_PHASE) {
+    delayedCalls();
+  } else {
+    document.addEventListener('delayed-phase', () => {
+      delayedCalls();
+    });
+  }
+
+  document.addEventListener('updateLocation', async event => {
+    forCode = event?.detail?.message;
+    const localStoredPrices = await apiUtils.updateExShowroomPrices(forCode, utility.setLocalStorage);
+    const priceEL = block.querySelectorAll('.ex-showroom-price');
+    priceEL.forEach(el => {
+      const model = el.dataset.carModel;
+      let price = localStoredPrices?.exShowroomData?.[model]?.variants?.[0]?.exShowroomPrice || '';
+      if (price) {
+        price = `${getFormattedPrice(price)}*`;
+      }
+      el.textContent = price;
+    });
+  });
+}

@@ -1,0 +1,91 @@
+@import url('../../commons/blocks/compare-cars-header/compare-cars-header.css');
+
+.navbar .links .desktop-panel.panel.compare:has(.compare-cars-header){
+    display: unset;
+    padding: 0px;
+  }
+
+  .menu-list > li.nav-link.compare a{
+    gap: 16px;
+  }
+  .compare-cars-header {
+      .block-margin {
+        margin-block:40px;
+        font-family: var(--body-font-family);
+      }
+      .image-wrapper {
+        padding: 9px 11px 6px 12px;
+        img {
+            width: 100%;
+            max-width: 615px;
+            max-height: 141px;
+            object-fit: contain;
+            aspect-ratio: 16 / 9;
+        }
+     }
+      .text-content-wrapper{
+        flex-direction: column;
+        .text-wrapper {
+            flex: unset;
+            .content {
+                row-gap: 12px;
+                max-width: 374px;
+            }
+            .compare-cars-header__title {
+                font-size: 1.5rem;
+                color: var(--secondary-black);
+                font-weight: 700;
+                line-height: 1.875rem;
+                margin-top: 0px;
+
+                @media (width >= 1024px) {
+                  font-size: 2rem;
+                  line-height: 2.5rem;
+                }
+            }
+            p {
+                color: #000;
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-heading-font-family);
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.125rem;
+
+                @media (width >= 1024px) {
+                  line-height: 1.25rem;
+                }              
+            }
+        }
+        .redirect-anchor {
+            margin-top: 16px;
+            a {
+                border: 1px solid var(--primary-blue-700);
+                color: var(--primary-blue-700);
+                display: inline-flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.125rem;
+
+                @media (width >= 1024px) {
+                  line-height: 1rem;
+                }              
+                &:after{
+                    display: none;
+                }
+                &:hover{
+                    background-color: var(--primary-blue-900);
+                    color: var(--secondary-gray-10);
+                }
+            }
+            .anchor-icon {
+                display: none;
+            }            
+        }
+      }
+  }

@@ -1,0 +1,261 @@
+.section.arena-help-me-select-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content {
+  background: linear-gradient(228deg, rgb(23 29 155 / 10%) 31.52%, rgb(255 98 0 / 10%) 111.9%);
+}
+
+.arena-help-me-select.g-container .teaser__content {
+  padding-bottom: 41px;
+  width: 100%;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__title {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  width: 320px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__title h2 {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-family);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: var(--fw-700);
+  line-height: 2.375rem;
+  margin: 0;
+
+  @media (width >= 1024px) {
+    line-height: 2.5rem;
+  }
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__info .teaser__pretitle {
+  display: inline-block;
+  background: linear-gradient(90deg, #dfcc18 31.7%, #ff0c0c 272.93%);
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__info .teaser__pretitle p {
+  display: flex;
+  padding: 3px 10px 2px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--tertiary-white);
+  text-align: center;
+  font-family: var(--body-font-arena);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: var(--fw-400);
+  line-height: 1.125rem;
+  margin: 0;
+
+  @media (width >= 1024px) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 4px 10px;
+    width: 165px;
+  }
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__info .teaser__pretitle p::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../../icons/sparkles-emoji-red.svg');
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__info .teaser__description h3 {
+  color: var(--tertiary-black);
+  font-family: var(--body-font-arena);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: var(--fw-300);
+  line-height: 1rem;
+  margin: 0;
+
+  @media (width >= 1024px) {
+    line-height: 1.125rem;
+  }
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions {
+  margin-top: 16px;
+}
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions button {
+  padding: 0.75rem 1rem;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions .button.button-primary-blue {
+  font-weight: var(--fw-400);
+  border: 0px;
+  letter-spacing: normal;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: clamp(64px, 7vh, 84px);
+  padding-bottom: 22px;
+  padding-left: 16px;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image img {
+  width: 100%;
+  min-height: 145px;
+  z-index: 1;
+  position: relative;
+  object-fit: cover;
+}
+
+.arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image {
+  margin-left: -6px;
+  padding-right: 10.8px;
+}
+
+.arena-help-me-select.g-container .teaser__content .teaser__info {
+  width: 245px;
+}
+
+@media (width >=768px) {
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+    justify-content: space-between;
+    padding: 40px 0px 0px 16px;
+  }
+
+  .arena-help-me-select.g-container .teaser__content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .arena-help-me-select.g-container .teaser__content .teaser__info {
+    width: 100%;
+    line-height: normal;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__title {
+    margin-top: 12px;
+    max-width: 508px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions {
+    margin-bottom: 13px;
+    line-height: normal;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions .button.button-primary-light {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    padding: 11px 28px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions a.button {
+    border: 0px;
+    padding: 8px 16px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions .button-primary-blue {
+    letter-spacing: normal;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image img {
+    width: 522px;
+    height: 274px;
+    object-fit: contain;
+    margin-left: 84px;
+  }
+}
+
+@media (width >= 1024px) {
+  .section.arena-help-me-select-container {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 123px 22.24px 122px 77px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__title {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    width: auto;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image {
+    line-height: normal;
+    padding-right: 0;
+    height: 235px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image img {
+    width: 417px;
+    height: 234px;
+    margin-left: 0px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__actions a.button {
+    padding: 12px 24px;
+    min-width: 142px;
+  }
+}
+
+@media (width >=1200px) {
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+    padding-left: 108px;
+  }
+}
+
+@media (width >=1366px) {
+  .section.arena-help-me-select-container {
+    padding-bottom: 50px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+    padding: 122px 52px 58px 108px;
+  }
+
+  .arena-help-me-select.g-container .teaser__content .teaser__info {
+    width: 504px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image {
+    height: 300px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image img {
+    width: 619px;
+    height: 100%;
+  }
+}
+
+@media (width>=1920px) {
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__card {
+    padding: 8px 44px 8px 152px;
+    align-items: center;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image img {
+    width: 823px;
+  }
+
+  .arena-help-me-select-wrapper .arena-help-me-select.g-container .teaser-content .teaser__image {
+    height: 464px;
+  }
+}
