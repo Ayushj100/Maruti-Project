@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Bootstrap File/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="Bootstrap File/js/jquery.min.js"></script>
+    <script src="Bootstrap File/js/bootstrap.min.js"></script>
+    
+    <script>
+        var parts=[{"serial":100,"part":"Carborator","price":1200,"dprice":1000,"Qty":10},
+                   {"serial":101,"part":"Air filter","price":1400,"dprice":1200,"Qty":10},
+                   {"serial":102,"part":"Radiator","price":2200,"dprice":2000,"Qty":10},
+                   {"serial":103,"part":"Coolant","price":200,"dprice":100,"Qty":10},
+                   {"serial":104,"part":"Tyre","price":3200,"dprice":3000,"Qty":10},
+                   {"serial":105,"part":"Suspension","price":1800,"dprice":1500,"Qty":10},
+                   {"serial":106,"part":"Door","price":6200,"dprice":5000,"Qty":10}];
+        function display(){
+            var data="";
+            for(i=0;i<parts.length;i++){
+                data +="<tr><td>"+parts[i].serial+"</td><td>"+parts[i].part+"</td><td>"+parts[i].price+
+                       "</td><td>"+parts[i].dprice+"</td><td>"+parts[i].Qty+"</td><td><input type='button' value='Delete'class='btn btn-danger' onclick='removedata("+i+")'/></td></tr>"
+            }
+            document.getElementById("num1").innerHTML=data;
+           
+        }
+        function fillterdata(){
+            var r=Number(document.getElementById("abc1").value);
+             if(r!=""){
+
+            
+            var data="";
+
+            for(i=0;i<parts.length;i++){
+                if(parts[i].serial==r){
+                    data +="<tr><td>"+parts[i].serial+"</td><td>"+parts[i].part+"</td><td>"+parts[i].price+
+                       "</td><td>"+parts[i].dprice+"</td><td>"+parts[i].Qty+"</td></tr>"
+                }
+                            document.getElementById("num1").innerHTML=data;
+                            
+
+            }
+        }
+        else{
+            display();
+        }
+        }
+        function partname(){
+                var r=document.getElementById("abc2").value;
+             if(r!=""){
+
+            
+            var data="";
+
+            for(i=0;i<parts.length;i++){
+                if(parts[i].part==r){
+                    data +="<tr><td>"+parts[i].serial+"</td><td>"+parts[i].part+"</td><td>"+parts[i].price+
+                       "</td><td>"+parts[i].dprice+"</td><td>"+parts[i].Qty+"</td></tr>"
+                }
+                            document.getElementById("num1").innerHTML=data;
+                            
+
+            }
+        }
+        else{
+            display();
+        }
+        }
+        function add(){
+            var sr=Number(document.getElementById("a1").value);
+            var pn=(document.getElementById("a2").value);
+            var pri=Number(document.getElementById("a3").value);
+            var dpri=Number(document.getElementById("a4").value);
+            var qnty=Number(document.getElementById("a5").value);
+            var p={"serial":sr,"part":pn,"price":pri,"dprice":dpri,"Qty":qnty};
+            parts.push(p);
+            display();
+           
+        }
+        function displaydata(){
+            var data="";
+            for(i=0;i<parts.length;i++){
+                data +="<tr></td>"+parts[i].serial+"</td><td>"+parts[i].part+"</td><td>"+parts[i].price+
+                       "</td><td>"+parts[i].dprice+"</td><td>"+parts[i].Qty+"</td><td><input type='button' class='btn btn-danger' value='Delete' onclick='removedata("+i+")'/></td></tr>"
+            }
+            document.getElementById("num1").innerHTML=data;
+        }
+        function removedata(r){
+            parts.splice(r,1);
+            display();
+            
+
+        }
+
+    </script>
+</head>
+<body onload="display()">
+    <marquee style="color:white;background-color: dodgerblue;height:30px;font-size: 25px;font-family: Book man old style;" behavior="alternate" scrollamount="15" >Welcome to Maruti Suzuki ARENA</marquee>
+    <div  style="margin-top: 0px;">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-brand">
+                <img src="imgg/suzuki" style="height:40px;margin-top:-10px;"/>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="project1.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="cars.html">CARS</a></li>
+               <li><a href="login.html">Login</a></li>
+
+
+            </ul>
+        </div>
+    <table border="1" class="table table-bordered table-hover table-condensed table-striped">
+        <thead>
+        
+                <center><b>Add parts</b></center>                              
+            
+            <tr>
+                <th>Serial Number
+                <input type="text" id="a1" class="form-control"/>
+                </th>
+                 <th>Part Name
+                <input type="text" id="a2" class="form-control"/>
+                 </th>
+                <th>Price
+                <input type="text" id="a3" class="form-control"/>
+                </th>
+
+                <th>Discounted Price
+                <input type="text" id="a4" class="form-control"/>
+                </th>
+                 <th>Quantity
+                <input type="text" id="a5" class="form-control"/>
+                </th>
+                <th>
+                    <input type="button" value="Add Parts" class="btn btn-success" onclick="add()"/>
+                </th>              
+
+            </tr>
+            </thead>
+            </table>
+    <table border="1" class="table table-bordered table-hover table-condensed table-striped" >
+        <thead>
+            <tr>
+                <th>Serial No.
+                <input type="text" id="abc1" class="form-control" onkeyup="fillterdata()"/>
+                </th>
+                <th>Part Name
+                <input type="text" id="abc2" class="form-control" onkeyup="partname()"/>
+                 </th>
+                <th>Price
+                <input type="text" id="abc3" class="form-control"/> </th>
+
+                <th>Discounted Price
+                <input type="text" id="abc4" class="form-control"/> </th>
+
+                <th>Quantity
+                <input type="text" id="abc5" class="form-control"/> </th>
+
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody id="num1">
+
+        </tbody>
+
+    </table> 
+    
+</body>
+</html>

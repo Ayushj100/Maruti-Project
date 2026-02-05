@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Display(){
+            var u=document.getElementById("a1").value;
+            var p=document.getElementById("a2").value;
+
+            if(u=="ciit" && p=="1234"){
+                localStorage.setItem("username",u,"password",p)
+                    window.location.href="http://127.0.0.1:5500/carparts.html";
+
+                
+            }
+            else if (u=="om" && p=="1111"){
+                localStorage.setItem("username",u,"password",p)
+                    window.location.href="http://127.0.0.1:5500/carparts.html";
+
+            }
+
+            else if(u=="Aniket" && p=="2222"){
+                localStorage.setItem("username",u,"password",p)
+                    window.location.href="http://127.0.0.1:5500/carparts.html";
+ 
+            }
+            else {
+                alert("Login fail");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <label>User Id</label>
+    <input type="text" id="a1" placeholder="Enter User Id"/><br/><br/>
+    <label>Password</label>
+    <input type="password" id="a2" placeholder="Enter Passowrd"/><br/><br/>
+
+    <input type="button" value="Login" onclick="Display()"/>
+</body>
+</html>

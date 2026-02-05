@@ -1,0 +1,1271 @@
+import { fetchPlaceholders, getMetadata, loadCSS, loadScript } from '../scripts/aem.js';
+
+export const setLocalStorage = (key, value) => {
+  localStorage.setItem(key, value);
+};
+
+export const removeLocalStorage = (key) => {
+  localStorage.removeItem(key);
+};
+
+export const getLocalStorage = (key) => localStorage.getItem(key);
+
+// using code to avoid cyclic dependency issue
+let getDomain = '';
+export async function getPublishDomain() {
+  if (getDomain === '') {
+    const currUrl = window.location.href;
+    if (
+      currUrl.includes('localhost') ||
+      currUrl.includes('aem.live') ||
+      currUrl.includes('aem.page') ||
+      currUrl.includes('author')
+    ) {
+      const placeholder = await fetchPlaceholders();
+      const { publishDomain } = placeholder;
+      getDomain = publishDomain;
+    } else {
+      getDomain = window.location.origin;
+    }
+  }
+  return getDomain;
+}
+
+const configuration = {
+  dev: {
+    transactionAccessCode: 'ATEL90HB40AO02LEOA',
+    datastreamId: '1713b6df-e53a-4154-bb32-6c9c44baaaff',
+    profileEnabledDataStreamId: '15f9e87a-0143-4fad-8b58-763c4a3b8a4c',
+  },
+  qa: {
+    transactionAccessCode: 'ATEL90HB40AO02LEOA',
+    datastreamId: '1713b6df-e53a-4154-bb32-6c9c44baaaff',
+    profileEnabledDataStreamId: '15f9e87a-0143-4fad-8b58-763c4a3b8a4c',
+  },
+  int: {
+    transactionAccessCode: 'ATEL90HB40AO02LEOA',
+    datastreamId: '1713b6df-e53a-4154-bb32-6c9c44baaaff',
+    profileEnabledDataStreamId: '15f9e87a-0143-4fad-8b58-763c4a3b8a4c',
+  },
+  uat: {
+    transactionAccessCode: 'ATEL90HB40AO02LEOA',
+    datastreamId: '1713b6df-e53a-4154-bb32-6c9c44baaaff',
+    profileEnabledDataStreamId: '15f9e87a-0143-4fad-8b58-763c4a3b8a4c',
+  },
+  stage: {
+    transactionAccessCode: 'ATEL90HB40AO02LEOA',
+    datastreamId: '1713b6df-e53a-4154-bb32-6c9c44baaaff',
+    profileEnabledDataStreamId: '15f9e87a-0143-4fad-8b58-763c4a3b8a4c',
+  },
+  prod: {
+    transactionAccessCode: 'AVVO65LB90CC10OVCC',
+    datastreamId: '1659483b-5319-4e87-a570-63c9e3ad2eab',
+    profileEnabledDataStreamId: '896efaa8-a071-41a5-b150-20fe3faafbd5',
+  },
+};
+
+const environements = {
+  dev: ['localhost', 'msildigital.aem.live', 'dev-arena.marutisuzuki.com', 'dev-nexa.marutisuzuki.com'],
+  qa: ['qa-arena.marutisuzuki.com', 'qa-nexa.marutisuzuki.com'],
+  int: ['int-arena.marutisuzuki.com', 'int-nexa.marutisuzuki.com'],
+  uat: ['uat-arena.marutisuzuki.com', 'uat-nexa.marutisuzuki.com'],
+  stage: ['stage-arena.marutisuzuki.com', 'stage-nexa.marutisuzuki.com', 'stagelznexa.nexaexperience.com', 'stagelz.marutisuzuki.com', 'www.msilarena.com'],
+  prod: ['prod-arena.marutisuzuki.com', 'prod-nexa.marutisuzuki.com', 'nexaexperience.com', 'www.marutisuzuki.com', 'campaigns.marutisuzuki.com'],
+};
+
+const keyword = Object.keys(environements);
+const url = window.location.href;
+export const environmentSelection = {
+  /**
+   * To get the current channel id whether it is nexa or arena
+   * @returns {channel id} string
+   */
+  getChannel: async () => {
+    const { channelId } = await fetchPlaceholders();
+    return channelId;
+  },
+  /**
+   * To get the details of the requested value based on environment
+   * @param {keyword to get the value} param
+   * @returns {requested value} string
+   */
+  getConfiguration: (param) => {
+    let config = '';
+    keyword.forEach((value) => {
+      environements[value].forEach((val1) => {
+        if (environements[value].includes(val1) && url.includes(val1)) {
+          config = configuration[value];
+        }
+      });
+    });
+    return config[param];
+  },
+  /**
+   * To get the environemnt name on request
+   * @returns {environemnt value} string
+   */
+  getEnvironment: () => {
+    let env = '';
+    keyword.forEach((value) => {
+      environements[value].forEach((val1) => {
+        if (environements[value].includes(val1) && url.includes(val1)) {
+          env = value;
+        }
+      });
+    });
+    return env;
+  },
+};
+
+/** SEO Utils */
+
+export const seoUtils = {
+  getJSON: async () => {
+    const carModelName = getMetadata('carmodelname');
+
+    // Construct the JSON-LD data with dynamic values
+    const jsonLdData = {
+      '@context': 'https://schema.org',
+      '@type': 'Car',
+      name: carModelName,
+    };
+
+    // Inject the JSON-LD data into the document
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(jsonLdData);
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.onerror = reject;
+      // document.head.appendChild(script);
+      resolve();
+    });
+  },
+};
+
+export const utility = {
+  sanitizeHtml(html) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    return doc.body.innerHTML;
+  },
+
+  formatToLakhs(num) {
+    if (num >= 100000) {
+      const lakhs = (num / 100000).toFixed(2);
+      return `${lakhs}`;
+    }
+    return num.toString();
+  },
+
+  formatToLakhsValue(num) {
+    return fetchPlaceholders().then(({ lakh }) => {
+      const lakhLabel = lakh || 'Lakh';
+      if (num >= 100000) {
+        const lakhs = Math.round((num / 100000) * 100) / 100;
+        return `${lakhs.toFixed(2)} ${lakhLabel}`;
+      }
+      return num.toString();
+    });
+  },
+
+  toCamelCase(str) {
+    return str
+      ?.replace(/[-_\s]+(.)?/g, (_, char) => (char ? char.toUpperCase() : ''))
+      .replace(/^(.)/, (match) => match.toLowerCase());
+  },
+
+  getSelectedLocation: () => {
+    try {
+      return JSON.parse(localStorage.getItem('selected-location'));
+    } catch (e) {
+      return {};
+    }
+  },
+  formatCurrency: (price) => {
+    const formatter = new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0,
+    });
+    const formattedPrice = formatter.format(price).replace('', ' ');
+    return formattedPrice;
+  },
+  getScrollHighlightsAssetPrefix: async (modelPath, data) => {
+    const obj = window.scrollHighlightsAssetPath ?? {};
+    const getPrefix = (path) => path.substring(path.lastIndexOf('/'), path.lastIndexOf('_') + 1);
+    const updateAndGetPrefix = (modelData) => {
+      // eslint-disable-next-line no-underscore-dangle
+      const path = modelData.scrollHighlightsAssetPath?._dmS7Url || '';
+      // eslint-disable-next-line no-underscore-dangle
+      const mobilePath = modelData.scrollHighlightsAssetPathMobile?._dmS7Url || path || '';
+      obj[modelPath] = {
+        prefix: getPrefix(path),
+        mobilePrefix: getPrefix(mobilePath),
+      };
+      window.scrollHighlightsAssetPath = obj;
+      return window.scrollHighlightsAssetPath[modelPath];
+    };
+    if (data) {
+      return updateAndGetPrefix(data);
+    }
+    if (obj[modelPath]?.prefix) {
+      return obj[modelPath];
+    }
+    // eslint-disable-next-line no-use-before-define
+    return updateAndGetPrefix(await apiUtils.getCarModelByPath(modelPath));
+  },
+
+  extractIntegerPart(value) {
+    if (value.toString().includes('.')) {
+      return Math.floor(value);
+    }
+    return value;
+  },
+
+  setLocalStorage: (data, key) => {
+    localStorage.setItem(key, JSON.stringify(data));
+  },
+
+  getLocalStorage: (key) => {
+    const data = localStorage.getItem(key);
+    return data ? JSON.parse(data) : null;
+  },
+
+  isMobileDevice: () => window.matchMedia('(max-width: 768px)').matches,
+
+  getLinkType(linkElement) {
+    const url = new URL(linkElement.href);
+    const isDownloadable = linkElement.hasAttribute('download') || /\.(pdf|zip|docx|jpg|png|mp4)$/i.test(url.pathname);
+    const isExternal = url.origin !== window.location.origin;
+    let linkType;
+
+    if (isDownloadable) {
+      linkType = 'download';
+    } else if (isExternal) {
+      linkType = 'exit';
+    } else {
+      linkType = 'other';
+    }
+    return linkType;
+  },
+
+  getLocation() {
+    return this.getLocalStorage('selected-location')?.cityName || 'Delhi';
+  },
+
+  getLanguage(currentPagePath) {
+    return currentPagePath.includes('en') ? 'en' : null;
+  },
+
+  getDeviceSpecificVideoUrl: (videoUrl, original = false, videoName = 'video') => {
+    if (original) {
+      if (!videoUrl) {
+        return videoUrl;
+      }
+      let finalUrl = videoUrl;
+      // need to be corrected after Demo Date 24 Feb
+      if (videoUrl.includes('/manifest.m3u8')) {
+        finalUrl = finalUrl.replace('/manifest.m3u8', '');
+      }
+      finalUrl = finalUrl.replace('/play', '');
+      const urlObj = new URL(finalUrl);
+      urlObj.pathname = urlObj.pathname + `/renditions/original/as/${videoName}`;
+      return urlObj.href;
+    }
+    const { userAgent } = navigator;
+    const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+    const isSafari =
+      /Safari/i.test(userAgent) &&
+      !/Chrome/i.test(userAgent) &&
+      !/CriOs/i.test(userAgent) &&
+      !/Android/i.test(userAgent) &&
+      !/Edg/i.test(userAgent);
+
+    const manifest = isIOS || isSafari ? 'manifest.m3u8' : 'manifest.mpd';
+    return videoUrl?.replace(/manifest\.mpd|manifest\.m3u8|play/, manifest);
+  },
+  getHlsVideoUrl: (videoUrl) => {
+    const manifest = 'manifest.m3u8';
+    return videoUrl?.replace(/manifest\.mpd|manifest\.m3u8|play/, manifest);
+  },
+
+  isEditorMode: (block) => [...block.attributes].find((item) => item.nodeName.startsWith('data-aue-')),
+
+  textContentChecker(text) {
+    const textContent = text?.textContent?.trim() || '';
+    return textContent;
+  },
+
+  async sha256(message) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(message);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+  },
+  initPlayerVideo: (player, src, originalSrc) => {
+    const updateSource = (hdEnabled, doPlay = false, time = 0) => {
+      if (hdEnabled) {
+        player.src({ type: 'video/mp4', src: originalSrc });
+      } else {
+        player.src(src);
+      }
+      player.currentTime(time);
+      if (doPlay) {
+        player.play();
+      } else {
+        player.pause();
+      }
+    };
+    updateSource(window.hdRenderingEnabled);
+    document.addEventListener('hd-button-toggle-event', (e) => {
+      updateSource(e.detail.enabled, !player.paused(), player.currentTime());
+    });
+  },
+  getLowestPriceVariant(modelData, priceData) {
+    // Extract the list of valid variantCd from modelData
+    const validVariants = modelData.variants.map((variant) => variant.variantCd);
+
+    // Filter priceData based on the validVariants list
+    const filteredPriceData = priceData.filter((item) => validVariants.includes(item.variantCd));
+
+    // Find the object with the lowest exShowroomPrice
+    return filteredPriceData.reduce(
+      (lowest, current) => (current.exShowroomPrice < lowest.exShowroomPrice ? current : lowest),
+      { exShowroomPrice: Infinity },
+    );
+  },
+
+  getHighestPriceVariant(modelData, priceData) {
+    // Extract the list of valid variantCd from modelData
+    const validVariants = modelData.variants.map((variant) => variant.variantCd);
+
+    // Filter priceData based on the validVariants list
+    const filteredPriceData = priceData.filter((item) => validVariants.includes(item.variantCd));
+
+    // Find the object with the highest exShowroomPrice
+    const maxPrice = Math.max(...filteredPriceData.map(d => d.exShowroomPrice));
+    return filteredPriceData.find(d => d.exShowroomPrice === maxPrice);
+  },
+
+  escapeHTML(unsafeStr) {
+    return unsafeStr
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/%/g, '%25')
+      .replace(/\//g, '&#x2F;')
+      .replace(/\(/g, '&#40;')
+      .replace(/\+/g, '&#43;')
+      .replace(/\)/g, '&#41;');
+  },
+
+  cleanEscapedURL(escapedURL) {
+    return escapedURL
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/%25/g, '%')
+      .replace(/&#x2F;/g, '/');
+  }
+};
+
+/** Api Utils */
+
+export function toTitleCase(word) {
+  if (typeof word !== 'string' || word.length === 0) {
+    return word;
+  }
+
+  if (/\d/.test(word)) {
+    return word.toUpperCase();
+  }
+
+  return word
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+    .join('-');
+}
+
+export function sentenceToTitleCase(sentence) {
+  if (!sentence.includes(' ')) {
+    return toTitleCase(sentence);
+  }
+
+  return sentence
+    .split(' ')
+    .map((word) => {
+      if (/\d/.test(word)) {
+        return word.toUpperCase();
+      }
+
+      return word
+        .split('-')
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+        .join('-');
+    })
+    .join(' ');
+}
+
+async function fetchData(url, onError) {
+  try {
+    const response = await fetch(url, {
+      method: 'GET',
+    });
+
+    if (!response.ok) {
+      if (onError) {
+        onError({ status: response.status });
+      }
+      throw new Error(`Network response was not ok: ${response.statusText}`);
+    }
+
+    const result = await response.json();
+    return result.data || [];
+  } catch (error) {
+    return [];
+  }
+}
+
+export async function fetchDataUsingToken(url, channel, doRedirect = true, method = 'GET', payload = null) {
+  const token = await authUtils.getToken(doRedirect);
+  const defaultHeaders = {
+    'Content-Type': 'application/json',
+    Authorization: token,
+    channel,
+  };
+  try {
+    const request = { method, headers: defaultHeaders };
+    if (payload) {
+      request.body = JSON.stringify(payload);
+    }
+    const response = await fetch(url, request);
+    if (response.status === 400) {
+      const result = await response.json();
+      const errorMessage = result.errors && result.errors[0] ? result.errors[0].errorMessage : 'Unknown error';
+      throw new Error(errorMessage);
+    }
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.status}`);
+    }
+    const result = await response.json();
+    if (result.error) {
+      throw new Error(result.message || 'Request failed.');
+    }
+
+    return result;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export const apiUtils = {
+  getCarLabelsList: async () => {
+    const { publishDomain } = await fetchPlaceholders();
+    const graphQlEndpoint = `${publishDomain}/graphql/execute.json/msil-platform/CarLabels;locale=en?x=0`;
+    const result = await fetchData(graphQlEndpoint);
+    const labels = result?.carLabelsList?.items || [];
+    return labels;
+  },
+
+  async fetchExShowroomPrices(forCode, modelCodes, channel, variantInfoRequired) {
+    const { publishDomain, apiExShowroomDetail, channelsMultiple } = await fetchPlaceholders();
+    const apiUrl = publishDomain + apiExShowroomDetail;
+    const apiChannel = channel === 'NRM' ? channelsMultiple : channel;
+    const params = {
+      forCode,
+      modelCodes,
+      channel: apiChannel,
+      variantInfoRequired,
+    };
+    const exShowroomUrl = new URL(apiUrl);
+    Object.keys(params).forEach((key) => {
+      if (params[key] !== '') {
+        exShowroomUrl.searchParams.append(key, params[key]);
+      }
+    });
+    try {
+      const response = await fetch(exShowroomUrl.href, { method: 'GET' });
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return null;
+    }
+  },
+  getLocalStorage(key) {
+    const storedData = localStorage.getItem(key);
+    if (storedData) {
+      return JSON.parse(storedData);
+    }
+    return null;
+  },
+
+  getCarModelByPath: async (path) => {
+    const publishDomain = await getPublishDomain();
+    const graphQlEndpoint = `${publishDomain}/graphql/execute.json/msil-platform/CarDetailsByPath;path=${path}`;
+    try {
+      return (await fetchData(graphQlEndpoint))?.carModelByPath?.item || {};
+    } catch (e) {
+      return {};
+    }
+  },
+
+  getActiveVariantList: async () => {
+    const { publishDomain } = await fetchPlaceholders();
+    const graphQlEndpoint = `${publishDomain}/graphql/execute.json/msil-platform/ActiveVariantList;channel=EXC;locale=en;`;
+    const result = await fetchData(graphQlEndpoint);
+    return result?.carModelList?.items;
+  },
+  getModelPrice: async (modelCd, channel, forCode) => {
+    const { publishDomain, apiExShowroomDetail } = await fetchPlaceholders();
+    const activeVariantList = await apiUtils.getActiveVariantList();
+    const storedPrices = localStorage.getItem('modelPriceData') ? JSON.parse(localStorage.getItem('modelPriceData')) : {};
+    const currentTime = new Date().getTime();
+    const isValid =
+      Object.keys(storedPrices).includes(modelCd) &&
+      Object.values(storedPrices).some((item) => item.timestamp > currentTime && item.price && Object.hasOwn(item.price, forCode));
+    if (isValid) {
+      return storedPrices[modelCd].price[forCode];
+    }
+
+    const apiUrl = publishDomain + apiExShowroomDetail;
+
+    const params = {
+      forCode,
+      channel,
+    };
+
+    const url = new URL(apiUrl);
+    Object.keys(params).forEach((key) => url.searchParams.append(key, params[key]));
+    url.searchParams.append('variantInfoRequired', true);
+
+    let data;
+    try {
+      const response = await fetch(url.href, { method: 'GET' });
+      data = await response.json();
+    } catch (error) {
+      data = {};
+    }
+
+    if (data?.error === false && data?.data) {
+      const timestamp = currentTime + 1 * 24 * 60 * 60 * 1000;
+      data.data.models.forEach((item) => {
+        const { modelCd, lowestExShowroomPrice, maxExShowroomPrice } = item;
+
+        if (!Object.hasOwn(storedPrices, modelCd)) {
+          storedPrices[modelCd] = { price: {}, timestamp };
+        }
+        const variantList = activeVariantList.find((itemX) => itemX.modelCd === modelCd) || null;
+        const lowestPriceObj = utility.getLowestPriceVariant(variantList, item.exShowroomDetailResponseDTOList);
+        const highestPriceObj = utility.getHighestPriceVariant(variantList, item.exShowroomDetailResponseDTOList);
+
+        storedPrices[modelCd].price[forCode] = {
+          lowest: lowestPriceObj?.exShowroomPrice || 0,
+          highest: highestPriceObj?.exShowroomPrice || 0,
+        };
+
+        storedPrices[modelCd].timestamp = timestamp;
+      });
+
+      localStorage.setItem('modelPrice', JSON.stringify(storedPrices));
+    }
+
+    return storedPrices[modelCd]?.price[forCode] || '';
+  },
+
+
+  addUpdateUserProfile: async (token, channel) => {
+    const { publishDomain, apiAddUpdateUserProfile } = await fetchPlaceholders();
+    const url = `${publishDomain}${apiAddUpdateUserProfile}`;
+    const headers = {
+      Authorization: token,
+      channel,
+    };
+    return fetch(url, {
+      method: 'POST',
+      headers,
+    });
+  },
+  validateStorageData: (storageData) => {
+    const currentTimestamp = new Date().getTime();
+    const expiryTimestamp = storageData.timestamp;
+
+    const resetStorageMetaToken = getMetadata('reset-storage-time');
+    const storedResetStorageMetaToken = storageData.resetStorageToken;
+
+    const validTimestamp = currentTimestamp <= expiryTimestamp;
+    const sameMetaToken = resetStorageMetaToken === storedResetStorageMetaToken;
+
+    return validTimestamp && sameMetaToken;
+  },
+  getResetStorageValidators: (storageData) => {
+    const resetStorageToken = getMetadata('reset-storage-time');
+    let timestamp = new Date().getTime() + 1 * 24 * 60 * 60 * 1000;
+    // to make sure the older/oldest cities data get refreshed after 24 hours
+    if (storageData?.timestamp) {
+      timestamp = storageData.timestamp;
+    }
+    return { resetStorageToken, timestamp };
+  },
+  getActiveVariants: async (setStorageFn) => {
+    try {
+      const storageKey = 'activeVariantsList';
+      let storedData = localStorage.getItem(storageKey);
+      if (storedData) {
+        storedData = JSON.parse(storedData);
+      }
+      if (storedData && apiUtils.validateStorageData(storedData)) {
+        return storedData;
+      }
+      const { publishDomain, getCarListApiEndpoint = '/graphql/execute.json/msil-platform/ArenaCarList' } =
+        await fetchPlaceholders();
+      if (!publishDomain || !getCarListApiEndpoint) {
+        const domainMissing = !publishDomain ? 'publishDomain is missing in placeholders.' : '';
+        const globalMissing = !getCarListApiEndpoint ? 'getCarListApiEndpoint is missing in placeholders.' : '';
+        throw new Error(`${domainMissing} ${globalMissing}`.trim());
+      }
+      const getCarListApi = new URL(`${publishDomain}${getCarListApiEndpoint}`);
+      const response = await fetch(getCarListApi.href);
+      if (!response.ok) {
+        throw new Error('exShowroom API is returned with not ok response');
+      }
+      const jsonData = await response.json();
+      const models = jsonData?.data?.carModelList?.items || [];
+      const tourModels = jsonData?.data?.tourModelList?.items || [];
+      // creating model and variants map
+      // variants are stored in a model code key based object
+      // variants is an object with key as model code
+      // Filtering out models with empty variants list on the basis of variantTechnology
+      const modelsMap = models?.reduce((acc, car) => {
+        const variants =
+          car.variants?.reduce((accInner, variant) => {
+            if (variant.variantTechnology) {
+              accInner[variant.variantCd] = { ...variant };
+            }
+            return accInner;
+          }, {}) || {};
+        if (Object.keys(variants).length) {
+          acc[car.modelCd] = { ...car, variants };
+        }
+        return acc;
+      }, {});
+      const tourModelsMap = tourModels?.reduce((acc, car) => {
+        if (car.variants?.length) {
+          acc[car.modelCd] = { ...car };
+        }
+        return acc;
+      }, {});
+      if (Object.keys(modelsMap).length) {
+        const resetStorageValidators = apiUtils.getResetStorageValidators();
+        setStorageFn({ ...resetStorageValidators, data: modelsMap, toursData: tourModelsMap }, storageKey);
+      }
+      return { data: modelsMap, toursData: tourModelsMap };
+    } catch (ex) {
+      return {};
+    }
+  },
+  // eslint-disable-next-line consistent-return
+  updateExShowroomPricesWrapper: async (locationForCode = '', setStorageFn = () => {}) => {
+    try {
+      const { channelId } = await fetchPlaceholders();
+      const storageKey = 'modelPriceData';
+      let storedData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      const activeVariants = await apiUtils.getActiveVariants(setStorageFn);
+      const activeModelCodes = Object.keys(activeVariants.data);
+      const tourModelCodes = Object.keys(activeVariants.toursData);
+      const modelCodes = Array.from(new Set([...activeModelCodes, ...tourModelCodes]));
+      const response = await apiUtils.fetchExShowroomPrices(locationForCode, modelCodes, channelId, true);
+      const modelsData = response?.data?.models;
+      if (modelsData) {
+        const activeVariantsWithPrice = apiUtils.getActiveVariantsPrices(modelsData, activeVariants);
+        const tourVariantsWithPrice = apiUtils.getTourVariantsPrices(modelsData, { data: activeVariants.toursData });
+        if (storedData[locationForCode]) {
+          // this location already exist in storage, it means it is data refresh
+          // remove all other locations, because those locations data are expired now
+          storedData = {};
+        }
+        const resetStorageValidators = apiUtils.getResetStorageValidators(storedData);
+        storedData = { ...storedData, ...resetStorageValidators };
+        storedData[locationForCode] = {
+          data: activeVariantsWithPrice,
+          tourVariants: tourVariantsWithPrice,
+        };
+        if (setStorageFn && activeVariantsWithPrice && Object.keys(activeVariantsWithPrice).length) {
+          setStorageFn(storedData, storageKey);
+        }
+        return {
+          activeVariants: activeVariants.data,
+          tourVariants: activeVariants.toursData,
+          exShowroomData: storedData[locationForCode].data,
+          exShowroomTourData: storedData[locationForCode].tourVariants,
+        };
+      }
+    } catch (error) {
+      return {};
+    }
+  },
+  updateExShowroomPrices: async (locationForCode, setStorageFn) => {
+    const storageKey = 'modelPriceData';
+    const storedData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    if (storedData[locationForCode] && apiUtils.validateStorageData(storedData)) {
+      const activeVariants = await apiUtils.getActiveVariants(setStorageFn);
+      return Promise.resolve({
+        activeVariants: activeVariants.data,
+        tourVariants: activeVariants.toursData,
+        exShowroomData: storedData[locationForCode].data,
+        exShowroomTourData: storedData[locationForCode].tourVariants,
+      });
+    }
+
+    if (window.exfetchPromise) {
+      return window.exfetchPromise;
+    }
+
+    window.exfetchPromise = apiUtils
+      .updateExShowroomPricesWrapper(locationForCode, setStorageFn)
+      .then((data) => {
+        return data;
+      })
+      .finally(() => {
+        window.exfetchPromise = null;
+      });
+
+    return window.exfetchPromise;
+  },
+  getActiveVariantsMap: async () => {
+    try {
+      const {
+        channelId,
+        publishDomain,
+        getCarListApiEndpoint = '/graphql/execute.json/msil-platform/ArenaCarList',
+      } = await fetchPlaceholders();
+      if (!channelId || channelId.includes('EXC')) {
+        throw new Error('Invalid or unexpected channel: ', channelId);
+      }
+      const response = await fetch(`${publishDomain}${getCarListApiEndpoint};channel=${channelId}`);
+      if (!response.ok) {
+        throw new Error('getActiveVariantsMap: Response not Ok');
+      }
+      const json = await response.json();
+      return (
+        json?.data?.carModelList?.items?.reduce((acc, cur) => {
+          acc[cur.modelCd] = cur;
+          return acc;
+        }, {}) || {}
+      );
+    } catch {
+      return {};
+    }
+  },
+  getActiveVariantsPrices: (priceData, activeVariants) => {
+    return priceData.reduce((acc, model) => {
+      const modelCode = model.modelCd;
+      const activeVariant = activeVariants?.data?.[modelCode];
+      const variants = model.exShowroomDetailResponseDTOList.reduce((accV, variant) => {
+        // eslint-disable-next-line no-unneeded-ternary
+        const variantFound = activeVariant && activeVariant?.variants?.[variant.variantCd] ? true : false;
+        if (variantFound) {
+          const variantCopy = activeVariant.variants[variant.variantCd];
+          accV.push({
+            ...variant,
+            ...variantCopy,
+            variantPrice: variantCopy.exShowroomPrice,
+          });
+        }
+        return accV;
+      }, []);
+      if (variants.length) {
+        const { lowestExShowroomPrice, maxExShowroomPrice } = model;
+        acc[modelCode] = {
+          maxExShowroomPrice,
+          lowestExShowroomPrice,
+        };
+        acc[modelCode].variants = variants.sort((a, b) => a.variantPrice - b.variantPrice);
+      }
+      return acc;
+    }, {});
+  },
+  getTourVariantsPrices: (priceData, activeVariants) => {
+    return priceData.reduce((acc, model) => {
+      const modelCode = model.modelCd;
+      const activeVariant = activeVariants?.data?.[modelCode];
+      const uniqueVariants = model.exShowroomDetailResponseDTOList.reduce(
+        (a, c) => ({
+          ...a,
+          [c.variantCd]: a[c.variantCd] && a[c.variantCd]?.exShowroomPrice < c.exShowroomPrice ? a[c.variantCd] : c,
+        }),
+        {},
+      );
+      const variants = Object.keys(uniqueVariants).reduce((accV, key, index, array) => {
+        const variant = uniqueVariants[key];
+        // eslint-disable-next-line no-unneeded-ternary
+        const variantFound = activeVariant && activeVariant?.variants?.includes(variant.variantCd);
+        if (variantFound) {
+          accV.push({
+            ...variant,
+            variantPrice: variant.exShowroomPrice,
+          });
+          // break this loop once a variant is found
+          array.splice(index);
+        }
+        return accV;
+      }, []);
+      if (variants.length) {
+        const { lowestExShowroomPrice, maxExShowroomPrice } = model;
+        acc[modelCode] = {
+          variants,
+          maxExShowroomPrice,
+          lowestExShowroomPrice,
+        };
+      }
+      return acc;
+    }, {});
+  },
+};
+
+/** Auth Utils */
+
+export const authUtils = {
+  isAuthPage: () => {
+    return getMetadata('isauthenticationrequired') === 'true';
+  },
+  policies: async () => {
+    const { authSusiFlow, authIssuer } = await fetchPlaceholders();
+    return {
+      signUpSignInPolicy: authSusiFlow,
+      issuer: authIssuer,
+    };
+  },
+  config: async () => {
+    const { authClientId, authAuthority, authKnownAuthorities, authRedirectUri } = await fetchPlaceholders();
+    const escapedLocationPath = utility.escapeHTML(window.location.pathname);
+
+    return {
+      auth: {
+        clientId: authClientId,
+        authority: authAuthority,
+        knownAuthorities: authKnownAuthorities?.split(','),
+        redirectUri: authRedirectUri,
+        navigateToLoginRequestUrl: localStorage.getItem('isLoginPageFlow') !== 'true',
+        postLogoutRedirectUri: utility.cleanEscapedURL(escapedLocationPath),
+      },
+      cache: {
+        cacheLocation: 'localStorage',
+        storeAuthStateInCookie: false,
+      },
+    };
+  },
+  getInstance: async () => {
+    if (window.authInstance) {
+      return window.authInstance;
+    }
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = `${window.hlx.codeBasePath}/commons/scripts/vendor/msal-browser.min.js`;
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.onload = async () => {
+        try {
+          const instance = await msal.PublicClientApplication.createPublicClientApplication(await authUtils.config());
+          window.authInstance = instance;
+          resolve(instance);
+        } catch (error) {
+          reject();
+        }
+      };
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  },
+  login: async (isLoginPage = false) => {
+    try {
+      if (!isLoginPage) {
+        localStorage.removeItem('isLoginPageFlow');
+        localStorage.removeItem('loginPageFlowRedirectUri');
+      }
+      const instance = await authUtils.getInstance();
+      if (!(await instance.getActiveAccount())) {
+        await instance.loginRedirect();
+      }
+    } catch (error) {
+      throw new Error('Error logging in');
+    }
+  },
+  getToken: async (isInteractionRequired = true) => {
+    try {
+      const instance = await authUtils.getInstance();
+      const account = await instance.getActiveAccount();
+      if (!account) {
+        return null;
+      }
+      if (Date.now() < account.idTokenClaims.exp * 1000) {
+        return account.idToken;
+      }
+      const request = {};
+      try {
+        const response = await instance.acquireTokenSilent(request);
+        if (!response.idToken || response.idToken === '') {
+          throw new msal.InteractionRequiredAuthError();
+        } else {
+          return response.idToken;
+        }
+      } catch (error) {
+        if (error instanceof msal.InteractionRequiredAuthError && isInteractionRequired) {
+          return instance.acquireTokenRedirect(request);
+        }
+      }
+    } catch (error) {
+      return null;
+    }
+    return null;
+  },
+  getProfile: async () => {
+    try {
+      const instance = await authUtils.getInstance();
+      const claims = (await instance.getActiveAccount())?.idTokenClaims;
+      const names = claims.name?.trim()?.split(' ') ?? [];
+      return claims
+        ? {
+            city: claims.City,
+            state: claims.State,
+            email: claims.EmailAddress?.pop(),
+            number: claims.phoneNumber?.length > 10 ? claims.phoneNumber.replace(/\+91/g, '') : claims.phoneNumber,
+            fname: names[0] === 'unknown' ? '' : names[0] || '',
+            lname: names.length > 1 ? names[names.length - 1] : '',
+          }
+        : null;
+    } catch (error) {
+      return null;
+    }
+  },
+  handleRedirect: async () => {
+    const addUpdateUserProfile = async (idToken, idTokenClaims) => {
+      if (!idTokenClaims.eventType) {
+        return;
+      }
+      const { channelId } = await fetchPlaceholders();
+      apiUtils.addUpdateUserProfile(idToken, channelId);
+    };
+    const setAuthReady = () => {
+      window.AUTH_READY = true;
+      document.dispatchEvent(new Event('authready'));
+    };
+    try {
+      const [instanceResult, authUtilityResult] = await Promise.allSettled([
+        authUtils.getInstance(),
+        import('./authUtils.js'),
+      ]);
+      const instance = instanceResult.status === 'fulfilled' ? instanceResult.value : null;
+      const authUtility = authUtilityResult.status === 'fulfilled' ? authUtilityResult.value : null;
+      try {
+        const response = await instance.handleRedirectPromise();
+        if (response?.idToken && response?.idTokenClaims) {
+          addUpdateUserProfile(response.idToken, response.idTokenClaims);
+        }
+        if (response?.account) {
+          await instance.setActiveAccount(response.account);
+          setAuthReady();
+          const profile = await authUtils.getProfile();
+          await authUtility.default.registerToken(profile);
+          return response.account;
+        }
+      } catch (error) {
+        setAuthReady();
+        return null;
+      }
+      const accounts = instance.getAllAccounts();
+      if (accounts.length <= 0) {
+        setAuthReady();
+        return null;
+      } else if (accounts.length === 1) {
+        await instance.setActiveAccount(accounts[0]);
+      } else {
+        const policies = await authUtils.policies();
+        const config = await authUtils.config();
+        const currentAccounts = accounts.filter(
+          (account) =>
+            account.homeAccountId.toUpperCase().includes(policies.signUpSignInPolicy.toUpperCase()) &&
+            account.idTokenClaims.iss.toUpperCase().includes(policies.issuer.toUpperCase()) &&
+            account.idTokenClaims.aud === config.auth.clientId,
+        );
+        if (currentAccounts.length > 1) {
+          if (currentAccounts.every((account) => account.localAccountId === currentAccounts[0].localAccountId)) {
+            await instance.setActiveAccount(currentAccounts[0]);
+          } else {
+            authUtils.logout();
+          }
+        } else if (currentAccounts.length === 1) {
+          await instance.setActiveAccount(currentAccounts[0]);
+        }
+      }
+      setAuthReady();
+      return await instance.getActiveAccount();
+    } catch (error) {
+      setAuthReady();
+      return null;
+    }
+  },
+  logout: async () => {
+    try {
+      const instance = await authUtils.getInstance();
+      await instance.logout();
+      return true;
+    } catch (error) {
+      return false;
+    }
+  },
+  waitForAuth: async () => {
+    return new Promise((resolve) => {
+      if (window.AUTH_READY) {
+        resolve();
+      } else {
+        const handler = () => {
+          resolve();
+          document.removeEventListener('authready', handler);
+        };
+        document.addEventListener('authready', handler);
+      }
+    });
+  },
+};
+
+/** VideoJS Loader */
+const VIDEO_JS_SCRIPT = '/blocks/brand-film-carousel/videojs/video.min.js';
+const VIDEO_JS_CSS = '/blocks/brand-film-carousel/videojs/video-js.min.css';
+const VIDEO_JS_LOAD_EVENT = 'videojs-loaded';
+
+const getVideojsScripts = (publishDomain = '') => ({
+  scriptTag: document.querySelector(`head > script[src="${publishDomain}${VIDEO_JS_SCRIPT}"]`),
+  cssLink: document.querySelector(`head > link[href="${publishDomain}${VIDEO_JS_CSS}"]`),
+});
+
+export async function waitForVideoJs() {
+  return new Promise(resolve => {
+    const { scriptTag, cssLink } = getVideojsScripts();
+    const isJsLoaded = scriptTag?.dataset?.loaded;
+    const isCSSLoaded = cssLink?.dataset?.loaded;
+    if (isJsLoaded && isCSSLoaded) {
+      resolve();
+    }
+
+    const successHandler = () => {
+      document.removeEventListener(VIDEO_JS_LOAD_EVENT, successHandler);
+      resolve();
+    };
+
+    document.addEventListener(VIDEO_JS_LOAD_EVENT, successHandler);
+  });
+}
+
+export const loadVideoJs = async publishDomain => {
+  const { scriptTag, cssLink } = getVideojsScripts(publishDomain);
+  if (scriptTag && cssLink) {
+    await waitForVideoJs();
+    return;
+  }
+
+  await Promise.all([loadCSS(publishDomain + VIDEO_JS_CSS), loadScript(publishDomain + VIDEO_JS_SCRIPT)]);
+
+  const { scriptTag: jsScript, cssLink: css } = getVideojsScripts(publishDomain);
+  jsScript.dataset.loaded = true;
+  css.dataset.loaded = true;
+  document.dispatchEvent(new Event(VIDEO_JS_LOAD_EVENT));
+};
+
+export const initVideoPlayer = block => {
+  const videoPlayers = [];
+  const blockVideoElements = block.querySelectorAll('video');
+
+  const isMobile = window.matchMedia('(width < 768px)').matches;
+  blockVideoElements.forEach(videoEl => {
+    let videoUrl = '';
+    let VideoOriginalUrl = '';
+    let videoName = '';
+    let poster = '';
+    const isHD = videoEl.dataset.hd === 'true';
+    const playVideoOnLoop = videoEl.hasAttribute('loop');
+    if (isMobile) {
+      videoUrl = utility.getDeviceSpecificVideoUrl(videoEl.dataset.mobVideoUrl || videoEl.dataset.deskVideoUrl);
+      videoName = videoEl.dataset.mobName;
+      VideoOriginalUrl = utility.getDeviceSpecificVideoUrl(
+        videoEl.dataset.mobVideoUrl || videoEl.dataset.deskVideoUrl,
+        true,
+        videoName,
+      );
+      poster = videoEl.dataset.mobPoster || videoEl.dataset.deskPoster;
+    } else {
+      videoUrl = utility.getDeviceSpecificVideoUrl(videoEl.dataset.deskVideoUrl);
+      videoName = videoEl.dataset.deskName;
+      VideoOriginalUrl = utility.getDeviceSpecificVideoUrl(videoEl.dataset.deskVideoUrl, true, videoName);
+      poster = videoEl.dataset.deskPoster;
+    }
+    const config = {
+      autoplay: true,
+      fill: true,
+      hasCustomPlayButton: false,
+      loop: playVideoOnLoop,
+      muted: true,
+      poster,
+      preload: 'auto',
+      controls: false,
+      playsinline: true,
+      html5: {
+        vhs: {
+          useDevicePixelRatio: true,
+          customPixelRatio: window.devicePixelRatio ?? 1,
+        },
+      },
+    };
+
+    // eslint-disable-next-line no-undef
+    const player = videojs(videoEl, config);
+
+    // commonUtility.initPlayerVideo(player, videoUrl, VideoOriginalUrl);
+    player.src(isHD ? VideoOriginalUrl : videoUrl);
+    videoEl.dataset.src = isHD ? VideoOriginalUrl : videoUrl;
+
+    player.ready(() => {
+      if (poster) {
+        player.poster(poster);
+      }
+    });
+    player.on('error', () => {
+      const error = player.error();
+      if (error) {
+        console.error('Video Error:', error.code, error.message);
+      }
+      // Hide the error display
+      player.error(null);
+    });
+    // player.load();
+    // player.play();
+    videoPlayers.push(player);
+    return videoEl.innerHTML;
+  });
+  return videoPlayers;
+};
+
+export const getVideoSrc = ({ hd, mobVideoUrl, mobName, deskVideoUrl, deskName }) => {
+  const isMobile = window.matchMedia('(width < 768px)').matches;
+  let videoUrl = '';
+  let VideoOriginalUrl = '';
+  let videoName = '';
+  const isHD = hd === 'true';
+  if (isMobile) {
+    videoUrl = utility.getDeviceSpecificVideoUrl(mobVideoUrl || deskVideoUrl);
+    videoName = mobName;
+    VideoOriginalUrl = utility.getDeviceSpecificVideoUrl(mobVideoUrl || deskVideoUrl, hd, videoName);
+  } else {
+    videoUrl = utility.getDeviceSpecificVideoUrl(deskVideoUrl);
+    videoName = deskName;
+    VideoOriginalUrl = utility.getDeviceSpecificVideoUrl(deskVideoUrl, hd, videoName);
+  }
+  return isHD ? VideoOriginalUrl : videoUrl;
+};
+
+// lazyload streaming video
+export const lazyLoadStreamingVideos = (block, videoCallback = null, threshold = 0.1) => {
+  const videos = block.querySelectorAll('video');
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const video = entry.target;
+          // console.log('entry.isIntersecting', entry.isIntersecting, video.src);
+          if (!video.src && typeof videoCallback === 'function') {
+            // Load video when in view
+            videoCallback();
+          }
+        }
+      });
+    },
+    { threshold, rootMargin: '35%' },
+  );
+
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+};
+
+// lazyload original video
+export const lazyLoadOriginalVideos = (block, threshold = 0.1) => {
+  const videos = block.querySelectorAll('video');
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const video = entry.target;
+          // console.log('entry.isIntersecting', entry.isIntersecting, video.src);
+          if (!video.src) {
+            // Load video when in view
+            video.src = video.dataset.src;
+          }
+        }
+      });
+    },
+    { threshold, rootMargin: '35%' }
+  );
+
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+};
+
+const loadedScripts = {};
+export function loadScriptz(src) {
+  return new Promise((resolve, reject) => {
+    // Already loaded
+    if (loadedScripts[src]) {
+      resolve();
+      return;
+    }
+
+    // Already in DOM but not yet resolved
+    if (document.querySelector(`script[src="${src}"]`)) {
+      document.querySelector(`script[src="${src}"]`).addEventListener('load', () => resolve());
+      return;
+    }
+
+    // Create new script
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+
+    script.onload = () => {
+      loadedScripts[src] = true;
+      resolve();
+    };
+
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+
+    document.body.appendChild(script);
+  });
+}
+
+export function initHLSWhenVideoReady(videoSrc, videoElem) {
+  // Load HLS.js dynamically
+  loadScriptz(`${window.hlx.codeBasePath}/commons/scripts/vendor/hls.js`).then(() => {
+    const video = videoElem;
+    if (video) {
+      if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = videoSrc;
+        video.addEventListener('loadedmetadata', () => video.play());
+      } else if (Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          video.play();
+        });
+      }
+    }
+  });
+}

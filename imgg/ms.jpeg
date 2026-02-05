@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!-- saved from url=(0332)https://www.marutisuzuki.com/arena?utm_source=google&utm_medium=cpc&utm_campaign=13799391098_ao&utm_term=marutisuzuki%20com&utm_content=c&utm_network=g&gad_source=1&gad_campaignid=13799391098&gbraid=0AAAAADAR9LM0EK662dXIqFjbKU0hB6Smz&gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ6JfrQ-kfcJMIr1kshZr2l0kNdZN6gv9gBo8miP5MfDP7YN_BhN-waAgKNEALw_wcB -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .video-nf4zhbyku-dimensions {
+        width: 100px;
+        height: 56.25px;
+      }
+
+      .video-nf4zhbyku-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%;
+      }
+    </style>
+    <title>Discover Maruti Suzuki Arena Car Range- Hatchback, Sedan, SUV/MUV Cars and Van</title>
+    <link rel="canonical" href="https://www.marutisuzuki.com/arena">
+    <meta name="description" content="Maruti Suzuki Arena - reliable and dependable family cars. Discover price, models, variants, technology features, and accessories. Explore the Arena car configurator and get a quote.">
+    <meta property="og:title" content="Discover Maruti Suzuki Arena Car Range- Hatchback, Sedan, SUV/MUV Cars and Van">
+    <meta property="og:description" content="Maruti Suzuki Arena - reliable and dependable family cars. Discover price, models, variants, technology features, and accessories. Explore the Arena car configurator and get a quote.">
+    <meta property="og:url" content="https://www.marutisuzuki.com/arena">
+    <meta property="og:image" content="https://www.marutisuzuki.com/default-meta-image.png?width=1200&amp;format=pjpg&amp;optimize=medium">
+    <meta property="og:image:secure_url" content="https://www.marutisuzuki.com/default-meta-image.png?width=1200&amp;format=pjpg&amp;optimize=medium">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discover Maruti Suzuki Arena Car Range- Hatchback, Sedan, SUV/MUV Cars and Van">
+    <meta name="twitter:description" content="Maruti Suzuki Arena - reliable and dependable family cars. Discover price, models, variants, technology features, and accessories. Explore the Arena car configurator and get a quote.">
+    <meta name="twitter:image" content="https://www.marutisuzuki.com/default-meta-image.png?width=1200&amp;format=pjpg&amp;optimize=medium">
+    <meta name="nav" content="/common/nav">
+    <meta name="footer" content="/common/footer">
+    <meta name="robots" content="index,follow">
+    <meta name="site-domain" content="https://www.marutisuzuki.com">
+    <meta name="reset-storage-time" content="2025-04-21T11:58AM">
+    <meta name="published-time" content="2025-09-08T08:29:10.378Z">
+    <meta name="modified-time" content="2025-09-08T08:28:49.333Z">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./ms_files/styles.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+    <style>
+  @font-face {
+    font-family: roboto-fallback;
+    size-adjust: 100.06%;
+    ascent-override: 95%;
+    src: local('Arial');
+  }
+  main {
+    display: block;
+  }
+  a {
+    background-color: transparent;
+  }
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  img {
+    border-style: none;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: var(--body-font-size-m);
+    margin: 0;
+    font-family: var(--body-font-arena);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: none;
+    width: 100vw;
+    margin-right: calc(100vw - 100%);
+  }
+
+  body.appear {
+    display: block;
+  }
+
+  body:not(.appear):has([class]) div[class] {
+    display: none;
+  }
+
+  header {
+    height: var(--nav-height);
+    transition: transform 0.5s ease;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* for CLS issue */
+  .header-wrapper .header:not([data-block-status='loaded']) {
+    height: 64px;
+  }
+
+  .car-detail-banner:not(.block), .car-detail-banner:not([data-block-status='loaded']) {
+    height: 685px;
+    background-color: black;
+    display: block !important;
+    overflow: hidden;
+
+    div {
+      display: none;
+    }
+  }
+</style>
+    <script src="./ms_files/init.js.download" type="module"></script>
+    <script src="./ms_files/aem.js.download" type="module"></script>
+    <script src="./ms_files/martech-loader.js.download" type="module"></script>
+    <script src="./ms_files/masterUtil.js.download" type="module"></script>
+    <script src="./ms_files/scripts.js.download" type="module"></script><!-- preload martech dependencies to improve LCP -->
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://www.marutisuzuki.com/commons/plugins/martech/src/index.js">
+    <link rel="preconnect" href="https://edge.adobedc.net/">
+    <script>
+    function preloadJs(url) {const script = document.createElement('script');script.src = url;script.type = 'module';document.head.appendChild(script);}
+    function preloadCss(url) {const style = document.createElement('link');style.href = url;style.rel = 'stylesheet';document.head.appendChild(style);}
+    function preloadImg(deskQuery, mobQuery) {
+      const isDesktop = window.matchMedia('(min-width: 600px)').matches;
+      const src = document.querySelector(`${isDesktop ? deskQuery : mobQuery}`)?.href;
+      if (!src) {
+        return;
+      }
+      const breakpoints = { desktop: 2000, mobile: 750 };
+      const dmUrl = new URL(src, window.location.href);
+      const currentExtension = dmUrl.pathname.substring(dmUrl.pathname.lastIndexOf('.') + 1).toLowerCase();
+      if (!['svg', 'gif'].includes(currentExtension)) {
+        if (!['jpg', 'jpeg'].includes(currentExtension)) {
+          dmUrl.href = `${dmUrl.href.substring(0, dmUrl.href.lastIndexOf('.'))}.png`;
+        }
+        dmUrl.searchParams.set('width', isDesktop ? breakpoints.desktop : breakpoints.mobile);
+        dmUrl.searchParams.set('id', '1');
+        dmUrl.searchParams.set('preferwebp', 'true');
+      }
+      const img = new Image();
+      img.loading = 'eager';
+      img.fetchPriority = 'high';
+      img.src = dmUrl.href;
+
+      return img;
+    }
+    if (location.pathname === '/arena/ertiga' || document.head.querySelector('meta[name="car-model-name"]')) {
+      preloadJs('/blocks/car-detail-banner/car-detail-banner.js');
+      preloadCss('/blocks/car-detail-banner/car-detail-banner.css');
+      setTimeout(() => preloadImg('.car-detail-banner div:nth-child(7) a', '.car-detail-banner div:nth-child(9) a'), 100);
+    } else if (location.pathname === '/arena') {
+      preloadJs('/blocks/banner-carousel/banner-carousel.js');
+      preloadCss('/blocks/banner-carousel/banner-carousel.css');
+      setTimeout(() => {
+        preloadImg('.banner-carousel div:nth-child(5) p:nth-child(3) a', '.banner-carousel div:nth-child(5) p:nth-child(5) a');
+        preloadImg('.banner-carousel div:nth-child(1) p:nth-child(8) a', '.banner-carousel div:nth-child(1) p:nth-child(8) a')
+      }, 100);
+    }
+</script><script src="./ms_files/banner-carousel.js.download" type="module"></script><link href="./ms_files/banner-carousel.css" rel="stylesheet">
+  <script src="./ms_files/msal-browser.min.js.download" async="" crossorigin="anonymous"></script><link rel="stylesheet" href="./ms_files/video-js.min.css" data-loaded="true"><script src="./ms_files/video.min.js.download" data-loaded="true"></script><link rel="stylesheet" href="./ms_files/fonts.css"><link rel="stylesheet" href="./ms_files/header.css"><link rel="stylesheet" href="./ms_files/slider.css"><link rel="stylesheet" href="./ms_files/arena-help-me-select.css"><link rel="stylesheet" href="./ms_files/highlights.css"><link rel="stylesheet" href="./ms_files/nearest-dealer.css"><link rel="stylesheet" href="./ms_files/schema-block.css"><script type="application/ld+json" async="" crossorigin="anonymous">{"@context":"https://schema.org","@type":"Organization","name":"Maruti Suzuki India Ltd.","url":"https://www.marutisuzuki.com/arena?utm_source=google&utm_medium=cpc&utm_campaign=13799391098_ao&utm_term=marutisuzuki%20com&utm_content=c&utm_network=g&gad_source=1&gad_campaignid=13799391098&gbraid=0AAAAADAR9LM0EK662dXIqFjbKU0hB6Smz&gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ6JfrQ-kfcJMIr1kshZr2l0kNdZN6gv9gBo8miP5MfDP7YN_BhN-waAgKNEALw_wcB","description":"Maruti Suzuki Arena - reliable and dependable family cars. Discover price, models, variants, technology features, and accessories. Explore the Arena car configurator and get a quote.","brand":"Maruti Suzuki","logo":"https://www.marutisuzuki.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium","image":"https://www.marutisuzuki.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium","contactPoint":{"@type":"ContactPoint","contactType":"contact","telephone":"1800-102-1800","email":"contact@maruti.co.in"},"sameAs":["https://www.facebook.com/MarutiSuzukiOfficial/","https://x.com/Maruti_Corp","https://www.youtube.com/user/MarutiSuzukiCorp","https://www.instagram.com/marutisuzukiofficial/","https://in.linkedin.com/company/maruti-udyog-limited","https://api.whatsapp.com/send/?phone=919289311487&text=Hi&type=phone_number&app_absent=0"]}</script><script async="" crossorigin="anonymous" type="application/ld+json">{"url":"https://www.marutisuzuki.com/arena?utm_source=google&utm_medium=cpc&utm_campaign=13799391098_ao&utm_term=marutisuzuki%20com&utm_content=c&utm_network=g&gad_source=1&gad_campaignid=13799391098&gbraid=0AAAAADAR9LM0EK662dXIqFjbKU0hB6Smz&gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ6JfrQ-kfcJMIr1kshZr2l0kNdZN6gv9gBo8miP5MfDP7YN_BhN-waAgKNEALw_wcB","@type":"WebPage","@context":"https://schema.org/","name":"Discover Maruti Suzuki Arena Car Range- Hatchback, Sedan, SUV/MUV Cars and Van"}</script><script type="application/ld+json" async="" crossorigin="anonymous">{"@context":"https://schema.org","@graph":[{"@type":"VideoObject","name":"MARUTI_SABER_20SEC A_CLEAN MASTER_020925.mp4","description":"","thumbnailUrl":"https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:fd2fe3dc-c7bc-43ed-b269-7bb7d48ac5c4/as/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg?height=1152&width=2000&id=1&preferwebp=true","uploadDate":"2025-09-08","duration":null,"contentUrl":"https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:22965a1e-3ca7-4fda-a617-972c34374246/play","embedUrl":"https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:22965a1e-3ca7-4fda-a617-972c34374246/play"}]}</script><link rel="stylesheet" href="./ms_files/footer.css"><link rel="stylesheet" href="./ms_files/lazy-styles.css"><link rel="stylesheet" href="./ms_files/logo.css"><link rel="stylesheet" href="./ms_files/icontitle.css"><link rel="stylesheet" href="./ms_files/car-filter.css"><link rel="stylesheet" href="./ms_files/teaser.css"><link rel="stylesheet" href="./ms_files/search-header.css"><link rel="stylesheet" href="./ms_files/compare-cars-header.css"><link rel="stylesheet" href="./ms_files/link-column.css"><link rel="stylesheet" href="./ms_files/location.css"><link rel="stylesheet" href="./ms_files/sign-in.css"><link rel="stylesheet" href="./ms_files/contact.css"><link rel="stylesheet" href="./ms_files/columns.css"><script async="" src="./ms_files/js"></script><script type="text/javascript" async="" src="./ms_files/f.txt"></script></head>
+  <body class="appear mouse-user"><div class="menu__bgoverlay" style="display: none;"></div>
+    <header class="header-wrapper sticky show show-header"><div class="header block" data-block-name="header" data-block-status="loaded"><div>
+    <div class="navbar navbar-arena g-container">
+      <div class="nav-hamburger">
+      <button type="button" aria-controls="nav" aria-label="Open navigation" aria-expanded="false">
+        <span class="nav-hamburger-icon"></span>
+      </button>
+    </div>
+      <div class="logo-wrapper"><div class="logo block" data-block-name="logo" data-block-status="loaded"><span class="arena">  
+                <a class="logo__picture" href="https://www.marutisuzuki.com/arena" data-logo-name="Arena">
+                    <picture><img loading="lazy" alt="Arena Logo" src="./ms_files/Arena-Logo.svg"></picture>
+                </a>
+            </span>
+        </div></div>
+      <div class="links"><div class="link-title"><span>Cars</span></div><div class="desktop-panel panel cars"><div class="car-filter block" data-block-name="car-filter" data-block-status="loaded"><div class="filter-cars container"><div class="car-filter-list"><span class="filter selected">All</span><span class="filter">hatchback<span>s</span></span><span class="filter">sedan<span>s</span></span><span class="filter small-case-s">muv/suv<span>s</span></span><span class="filter">van<span>s</span></span><span class="filter">Tour</span></div><div class="filter-text"><div class="title">Built for Every Journey</div><div class="subtitle"></div></div><div class="card-list-teaser"><div class="card-list"><a class="card card-blue" href="https://www.marutisuzuki.com/arena/alto-k10" data-price="423000.2"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Alto.jpeg" alt="Alto K10" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/alto-k10-1" alt="alto-k10-logo" loading="lazy"></div><div class="card-content"><p class="card-title">Alto K10</p><p class="card-price-text">from</p><p class="card-price" data-target-index="9" data-price="423000.2">₹ 4 23 000</p></div></div></a><a class="card card-blue" href="https://www.marutisuzuki.com/arena/s-presso" data-price="426499.97"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Spresso.jpeg" alt="S-presso" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/s-presso-1" alt="S-presso Logo" loading="lazy"></div><div class="card-content"><p class="card-title">S-Presso</p><p class="card-price-text">from</p><p class="card-price" data-target-index="8" data-price="426499.97">₹ 4 26 500</p></div></div></a><a class="card card-orange" href="https://www.marutisuzuki.com/arena/celerio" data-price="563999.61"><div class="card-image"><img src="./ms_files/_025_04_15_13_08_19_Celerio_360_Red_PathTracer_0006.jpeg" alt="Celerio" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/Celerio-1" alt="Celerio Logo" loading="lazy"></div><div class="card-content"><p class="card-title">Celerio</p><p class="card-price-text">from</p><p class="card-price" data-target-index="5" data-price="563999.61">₹ 5 64 000</p></div></div></a><a class="card card-orange" href="https://www.marutisuzuki.com/arena/eeco" data-price="569500.29"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Eeco.jpeg" alt="Eeco" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/ecco-1" alt="eeco-logo" loading="lazy"></div><div class="card-content"><p class="card-title">Eeco</p><p class="card-price-text">from</p><p class="card-price" data-target-index="6" data-price="569500.29">₹ 5 69 500</p></div></div></a><a class="card card-blue" href="https://www.marutisuzuki.com/arena/wagon-r" data-price="578500.29"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Wagonr.jpeg" alt="Wagonr" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/WagonR" alt="wagonr-logo" loading="lazy"></div><div class="card-content"><p class="card-title">WagonR</p><p class="card-price-text">from</p><p class="card-price" data-target-index="7" data-price="578500.29">₹ 5 78 500</p></div></div></a><a class="card card-blue" href="https://www.marutisuzuki.com/swift" data-price="649000.29"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Swift.jpeg" alt="Swift" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/swift" alt="Swift Logo" loading="lazy"></div><div class="card-content"><p class="card-title">Swift</p><p class="card-price-text">from</p><p class="card-price" data-target-index="4" data-price="649000.29">₹ 6 49 000</p></div></div></a><a class="card card-orange" href="https://www.marutisuzuki.com/arena/dzire" data-price="683999.35"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Dzire.jpeg" alt="Swift Dzire" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/dzire-2" alt="Swift Dzire" loading="lazy"></div><div class="card-content"><p class="card-title">Dzire</p><p class="card-price-text">from</p><p class="card-price" data-target-index="3" data-price="683999.35">₹ 6 83 999</p></div></div></a><a class="card card-blue" href="https://www.marutisuzuki.com/arena/victoris" data-price="829000"><div class="card-image"><img src="./ms_files/Saber_navigation_car_model.jpeg" alt="Victoris" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/Neww-victoris-new-logo" alt="Victoris-Logo" loading="lazy"></div><div class="card-content"><p class="card-title">Victoris</p><p class="card-price-text">&nbsp;</p><p class="card-price" data-target-index="2"></p></div></div></a><a class="card card-blue" href="https://www.marutisuzuki.com/arena/brezza" data-price="868999.58"><div class="card-image"><img src="./ms_files/Navigation_1920x1080_Brezza.jpeg" alt="Brezza" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/brezza-2" alt="Brezza-Logo" loading="lazy"></div><div class="card-content"><p class="card-title">Brezza</p><p class="card-price-text">from</p><p class="card-price" data-target-index="1" data-price="868999.58">₹ 8 69 000</p></div></div></a><a class="card card-green" href="https://www.marutisuzuki.com/arena/ertiga" data-price="896500.22"><div class="card-image"><img src="./ms_files/Ertiga_3_4th_shot_front.jpeg" alt="Ertiga" loading="lazy"></div><div class="card-info"><div class="card-logo-image"><img src="./ms_files/Ertiga-1" alt="ertiga-logo" loading="lazy"></div><div class="card-content"><p class="card-title">Ertiga</p><p class="card-price-text">from</p><p class="card-price" data-target-index="0" data-price="896500.22">₹ 8 96 500</p></div></div></a></div><div class="teaser-list-no-border"></div><div class="teaser-list"><div class="teaser block" data-block-name="teaser" data-block-status="loaded"><div class="g-container">
+    <div class="teaser__card">
+      
+      <div class="teaser__content">
+        <div class="teaser__info">
+          <div class="teaser__pretitle"><p>Need help picking the right car? We're here to assist.</p></div>
+          
+          <div class="teaser__description"><p>A few simple questions, and we’ll guide you to your perfect car.</p></div>
+        </div>
+        
+                   <div class="teaser__actions">
+                     <a href="https://www.marutisuzuki.com/arena/help-me-select" title="" class="button button-primary-blue" target="_self"></a>
+                     
+                   </div>
+                 
+      </div>
+    </div>
+  </div>
+  </div></div></div></div></div></div><div class="link-title"><span>Search</span></div><div class="desktop-panel panel search"><div class="search-header block" data-block-name="search-header" data-block-status="loaded"><div class="search-header-page container">
+      <div class="wrapper">
+        
+    <div class="search-recomm">
+      <div class="search-recomm-title"></div>
+      <div class="search-recomm-list"><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=ARENA%20cars%20under%205%20Lakh">ARENA cars under 5 Lakh</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=CNG%20Cars%20under%205%20Lakhs">CNG Cars under 5 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Automatic%20Cars%20under%206%20Lakhs">Automatic Cars under 6 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Sedans%20under%208%20Lakhs">Sedans under 8 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Arena%20Hatchbacks">Arena Hatchbacks</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Financing%20Options">Financing Options</a></div>
+    </div>
+        <form class="search-form" method="GET" action="https://www.marutisuzuki.com/arena/search">
+          <div class="search-input" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="search-suggestions-07458">
+            
+    <button type="button" class="back-arrow-btn">
+      <span class="sr-only">closeSearch</span>
+    </button>
+            <label>
+              <input name="q" type="text" autocomplete="off" class="header-search" aria-autocomplete="both" placeholder="Search cars, features, accessories and dealers" aria-controls="search-suggestions-07458">
+              <span class="sr-only">Search cars, features, accessories and dealers</span>
+            </label>
+            <button type="button" class="clear-btn">
+              <span class="sr-only">clearInput</span>
+            </button> 
+            <button type="submit" class="search-icon">
+              <span class="sr-only">submitSearch</span>
+            </button>
+          </div>
+          <div class="search-suggestions-wrapper">
+            <ul class="search-suggestions" id="search-suggestions-07458" role="listbox" data-initialized="true"></ul>
+          </div>
+        </form>
+      </div>
+    </div></div></div><div class="link-title"><span>Compare</span></div><div class="desktop-panel panel compare"><div class="compare-cars-header block" data-block-name="compare-cars-header" data-block-status="loaded"><div class="compare-cars-header g-container block-margin align-item">
+            <div class="g-row">
+              <div class=" g-lg-6 g-md-4 image-wrapper">
+                    <picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:df857505-395b-4810-9052-0bb2ffdd2988/as/arena-compare-cars-header.png?width=2000&amp;id=1&amp;preferwebp=true" height="143" width="615"><img loading="lazy" alt="/adobe/assets/urn:aaid:aem:df857505-395b-4810-9052-0bb2ffdd2988/as/arena-compare-cars-header.png?height=143&amp;width=615" src="./ms_files/arena-compare-cars-header.png" height="143" width="615"></picture>
+              </div>
+              <div class="g-lg-6 g-md-4 d-flex text-content-wrapper">
+                <div class="text-wrapper">
+                    <div class="content">
+                      <p class="compare-cars-header__title text-lg-2 font-weight-500">Compare Cars</p>
+                      <p class="font-weight-400">Explore and compare car models side-by-side and select the one that fits your needs perfectly!</p>
+                    </div>
+                </div>
+                <div class="redirect-anchor d-flex">
+                  <a href="https://www.marutisuzuki.com/arena/compare-cars" target="_blank" class="header-compare-link" rel="noopener noreferrer">Compare Cars</a>
+                </div>
+              </div> 
+            </div>
+    </div></div></div><div class="link-title"><span>Buy</span></div><div class="desktop-panel panel buy"><div class="link-grid block"><div class="link-container-section"><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">BUYER’S GUIDE</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arena/register-your-interest" target="_self">Register Your Interest</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/articles/here-an-easy-guide-to-buying-a-maruti-suzuki-automatic-car" target="_blank" rel="noopener noreferrer">How-to-buy Guide</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/exchange" target="_blank" rel="noopener noreferrer">Exchange Car</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">BOOK</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arena/ebook" target="_self">Book Your Arena Car</a></li><li><a href="https://www.marutisuzuki.com/arena/book-a-test-drive" target="_self">Book Test Drive</a></li><li><a href="https://www.marutisuzuki.com/arena/connect-to-dealer" target="_self">Visit Maruti Suzuki Arena Showroom</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">CAR FINANCING</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe</a></li><li><a href="https://www.marutisuzuki.com/arena/arena-finance" target="_blank" rel="noopener noreferrer">Maruti Suzuki Smart Finance</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">ALLIED SERVICES</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/service/extended-warranty" target="_blank" rel="noopener noreferrer">Extended Warranty</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/insurance" target="_blank" rel="noopener noreferrer">Insurance</a></li><li><a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" rel="noopener noreferrer">Genuine Accessories</a></li>
+      </ul>
+    </div></div></div></div><div class="link-title"><span>Owners</span></div><div class="desktop-panel panel owners"><div class="link-grid block"><div class="link-container-section"><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">SERVICE HUB</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/service/book-service-appointment" target="_blank" rel="noopener noreferrer">Book Arena Car Service Appointment</a></li><li><a href="https://www.marutisuzuki.com/maruti-authorized-service-station" target="_blank" rel="noopener noreferrer">Arena Service Centre Locator</a></li><li><a href="https://www.marutisuzuki.com/service" target="_blank" rel="noopener noreferrer">View All Arena Car Services</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">PARTS AND ACCESSORIES</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" rel="noopener noreferrer">Genuine Accessories</a></li><li><a href="https://www.marutisuzuki.com/genuine-parts" target="_blank" rel="noopener noreferrer">Genuine Parts</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">LOYALTY &amp; SUPPORT</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/corporate/technology/suzuki-connect" target="_blank" rel="noopener noreferrer">Suzuki Connect</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/maruti-suzuki-rewards" target="_blank" rel="noopener noreferrer">Maruti Suzuki Rewards</a></li>
+      </ul>
+    </div></div></div></div><div class="link-title"><span>Arena World</span></div><div class="desktop-panel panel arena"><div class="link-grid block"><div class="link-container-section"><div class="link-grid-column link-column-horizontal">
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arenaworld/campaigns" target="_blank" rel="noopener noreferrer">Campaigns</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/events" target="_blank" rel="noopener noreferrer">Events</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/reviews" target="_blank" rel="noopener noreferrer">Reviews</a></li><li><a href="https://www.marutisuzuki.com/service" target="_blank" rel="noopener noreferrer">Services</a></li><li><a href="https://www.marutisuzuki.com/arenaworld" target="_blank" rel="noopener noreferrer">Tips &amp; Posts</a></li>
+      </ul>
+    </div></div></div></div></div>
+      <div class="right" id="nav-right"><div class="location-wrapper"><div class="location block" data-block-name="location" data-block-status="loaded"><button class="location-btn" data-forcode="08">
+              <span>Delhi</span>
+          </button>
+          <div class="geo-location" style="display: none;">
+          <div class="icon-container">
+           <div class="inner-detect-location__box">
+                  <p class="detect-location__text">
+                      Detect your location
+                  </p>
+                </div>
+          <div class="top__cities"><div class="top__city"><div class="top__city__icon active"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:4f337ec1-d272-4156-9bd5-57a834aa8410/as/delhi.png?width=2000&amp;id=1&amp;preferwebp=true"><img loading="lazy" alt="/adobe/assets/urn:aaid:aem:4f337ec1-d272-4156-9bd5-57a834aa8410/as/delhi.png" src="./ms_files/delhi.png"></picture><p class="selected__top__city active" data-forcode="08" data-citycode="053">Delhi<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.54983 17.6538L4.21533 12.3193L5.28433 11.2501L9.54983 15.5156L18.7153 6.3501L19.7843 7.41935L9.54983 17.6538Z" fill="white"></path></svg></p></div></div><div class="top__city"><div class="top__city__icon"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3f7ae74f-b46d-46df-9c55-5477696a43a5/as/mumbai.png?width=2000&amp;id=1&amp;preferwebp=true"><img loading="lazy" alt="/adobe/assets/urn:aaid:aem:3f7ae74f-b46d-46df-9c55-5477696a43a5/as/mumbai.png" src="./ms_files/mumbai.png"></picture><p class="selected__top__city" data-forcode="05" data-citycode="050">Mumbai</p></div></div><div class="top__city"><div class="top__city__icon"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:d888a5ef-ba57-4842-a2e4-7b67a0647b01/as/bengaluru.png?width=2000&amp;id=1&amp;preferwebp=true"><img loading="lazy" alt="/adobe/assets/urn:aaid:aem:d888a5ef-ba57-4842-a2e4-7b67a0647b01/as/bengaluru.png" src="./ms_files/bengaluru.png"></picture><p class="selected__top__city" data-forcode="02" data-citycode="047">Bengaluru</p></div></div><div class="top__city"><div class="top__city__icon"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:3e646839-afb1-4781-a35c-fa05308eb056/as/kolkata.png?width=2000&amp;id=1&amp;preferwebp=true"><img loading="lazy" alt="/adobe/assets/urn:aaid:aem:3e646839-afb1-4781-a35c-fa05308eb056/as/kolkata.png" src="./ms_files/kolkata.png"></picture><p class="selected__top__city" data-forcode="06" data-citycode="051">Kolkata</p></div></div></div></div>
+                <div class="search-location">
+                 <div class="search-box">
+                  <input type="text" placeholder="Search Your Location" class="search">
+                  <span class="search-icon"></span> 
+                 </div>
+                 <div class="suggested-places"></div>
+                </div>
+              </div>
+          
+      </div></div>
+        <div class="language">EN</div>
+        <div id="user-img"></div>
+        <div class="sign-in-wrapper hidden"><div class="sign-in block" data-block-name="sign-in" data-block-status="loaded">
+        <div class="user__dropdown">
+            
+        <div class="user__account">
+         
+            <a href="https://www.marutisuzuki.com/corporate/reach-us" class="user__account--link reach us" target="_blank" rel="noopener noreferrer">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/media_1afaa3496abba55897aa553a3ad2ceaca4da34ff5.svg" loading="lazy" alt="Reach Us">
+                </span>
+                Reach Us
+            </a>
+        
+            <a href="https://www.marutisuzuki.com/arena/user/assistance-support" class="user__account--link profile" target="_self">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/media_13b57ab8376192c7cb827e1fed7ceef1bb8dcaf60.svg" loading="lazy" alt="Profile">
+                </span>
+                Profile
+            </a>
+        
+            <div class="user__account--link sign-in-btn">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/signin.svg" loading="lazy" alt="Sign in / Sign Up">
+                </span>
+                <button type="button" data-sign-out-text="Sign Out">Sign in / Sign Up</button>
+            </div>
+        </div>
+   
+        <div class="contact-wrapper"><div class="contact block" data-block-name="contact" data-block-status="loaded"><div class="contact_wrp_arena user__contact header">
+      <p class="user__contact-title">Contact us</p>
+      
+      <div class="user__contact__icons">
+        
+                <a href="https://www.marutisuzuki.com/arena?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=13799391098_ao&amp;utm_term=marutisuzuki%20com&amp;utm_content=c&amp;utm_network=g&amp;gad_source=1&amp;gad_campaignid=13799391098&amp;gbraid=0AAAAADAR9LM0EK662dXIqFjbKU0hB6Smz&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ6JfrQ-kfcJMIr1kshZr2l0kNdZN6gv9gBo8miP5MfDP7YN_BhN-waAgKNEALw_wcB#" class="user__contact--icon phone" onclick="event.preventDefault(); this.closest(&#39;.contact&#39;).querySelector(&#39;.contact-toggle-box&#39;).classList.toggle(&#39;hidden&#39;)">
+                  <span class="sr-only">phone</span>
+                  <img src="./ms_files/phone.svg" alt="phone" loading="lazy">
+                </a>
+                <div class="hidden&gt;18001021800&lt;/div&gt;
+                &lt;div class=" hidden=""></div>
+              
+                <a href="https://wa.me/919289311487?text=Hi" target="_blank" class="user__contact--icon whatsapp" rel="noopener noreferrer">
+                  <span class="sr-only">WhatsApp</span>
+                  <img src="./ms_files/whatsapp.svg" alt="WhatsApp" loading="lazy">
+                </a>
+              
+                <a href="mailto:contact@maruti.co.in" class="user__contact--icon email">
+                  <span class="sr-only">email</span>
+                  <img src="./ms_files/mail.svg" alt="email" loading="lazy">
+                </a>
+              
+      </div>
+      
+      <div class="hidden contact-toggle-box"><div class="user__contact__icon-call_container">
+        <a href="tel:18001021800" class="primary-telephone">18001021800</a>
+        
+        <a href="tel:" class="secondary-telephone"></a>
+      </div></div>
+    </div>
+  </div></div></div>
+    </div></div>
+      </div>
+      <div class="car-icon"><picture>
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1d5315470a49c7c85ceec9cdfb01c38bd5d66ddef.svg?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1d5315470a49c7c85ceec9cdfb01c38bd5d66ddef.svg?width=750&amp;format=webply&amp;optimize=medium">
+          <source type="image/svg+xml" srcset="https://www.marutisuzuki.com/common/media_1d5315470a49c7c85ceec9cdfb01c38bd5d66ddef.svg?width=2000&amp;format=svg&amp;optimize=medium" media="(min-width: 600px)">
+          <img loading="lazy" alt="Cars" src="./ms_files/media_1d5315470a49c7c85ceec9cdfb01c38bd5d66ddef.svg">
+        </picture></div>
+    </div>
+    <div class="car-filter-menu hidden car-filter-arena" id="carFilterMenu"><div class="search-header block" data-block-name="search-header" data-block-status="loaded"><div class="search-header-page container">
+      <div class="wrapper">
+        
+    <div class="search-recomm">
+      <div class="search-recomm-title"></div>
+      <div class="search-recomm-list"><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=ARENA%20cars%20under%205%20Lakh">ARENA cars under 5 Lakh</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=CNG%20Cars%20under%205%20Lakhs">CNG Cars under 5 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Automatic%20Cars%20under%206%20Lakhs">Automatic Cars under 6 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Sedans%20under%208%20Lakhs">Sedans under 8 Lakhs</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Arena%20Hatchbacks">Arena Hatchbacks</a><a class="search-recomm-list-item" href="https://www.marutisuzuki.com/arena/search?q=Financing%20Options">Financing Options</a></div>
+    </div>
+        <form class="search-form" method="GET" action="https://www.marutisuzuki.com/arena/search">
+          <div class="search-input" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="search-suggestions-07458-mob">
+            
+    <button type="button" class="back-arrow-btn" data-event-attached="true">
+      <span class="sr-only">closeSearch</span>
+    </button>
+            <label>
+              <input name="q" type="text" autocomplete="off" class="header-search" aria-autocomplete="both" placeholder="Search cars, features, accessories and dealers" aria-controls="search-suggestions-07458-mob">
+              <span class="sr-only">Search cars, features, accessories and dealers</span>
+            </label>
+            <button type="button" class="clear-btn">
+              <span class="sr-only">clearInput</span>
+            </button> 
+            <button type="submit" class="search-icon">
+              <span class="sr-only">submitSearch</span>
+            </button>
+          </div>
+          <div class="search-suggestions-wrapper">
+            <ul class="search-suggestions" id="search-suggestions-07458-mob" role="listbox" data-initialized="true"></ul>
+          </div>
+        </form>
+      </div>
+    </div></div>
+    <div class="car-panel-header">
+      <div></div>
+      <span class="car-text">Cars</span>
+      <span class="car-filter-close"><img src="./ms_files/close.svg" alt="close"></span>
+    </div>
+      </div>
+  
+    <div id="menu" class="menu hidden menu-arena">
+      <div class="menu-header">
+        <div class="back-arrow"></div>
+        <span class="menu-title">Menu</span>
+        <span class="close-icon"></span>
+      </div>
+      <ul class="menu-list">
+    
+    <li class="nav-link compare"><a href="https://www.marutisuzuki.com/arena/compare-cars" target="_blank" rel="noopener noreferrer"> <span class="icon"><picture>
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_137d8629b04c388fe7162d6acc6979f20a2e3b670.svg?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_137d8629b04c388fe7162d6acc6979f20a2e3b670.svg?width=750&amp;format=webply&amp;optimize=medium">
+          <source type="image/svg+xml" srcset="https://www.marutisuzuki.com/common/media_137d8629b04c388fe7162d6acc6979f20a2e3b670.svg?width=2000&amp;format=svg&amp;optimize=medium" media="(min-width: 600px)">
+          <img loading="lazy" alt="Compare" src="./ms_files/media_137d8629b04c388fe7162d6acc6979f20a2e3b670.svg">
+        </picture></span> <span class="menu-title">Compare</span> </a></li>
+    
+    <li id="menu-item-3" class="accordion nav-link buy"><span class="icon"><picture>
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_16be52967b7c356f4337a2745fcbc54eb6d051cb0.svg?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_16be52967b7c356f4337a2745fcbc54eb6d051cb0.svg?width=750&amp;format=webply&amp;optimize=medium">
+          <source type="image/svg+xml" srcset="https://www.marutisuzuki.com/common/media_16be52967b7c356f4337a2745fcbc54eb6d051cb0.svg?width=2000&amp;format=svg&amp;optimize=medium" media="(min-width: 600px)">
+          <img loading="lazy" alt="Buy" src="./ms_files/media_16be52967b7c356f4337a2745fcbc54eb6d051cb0.svg">
+        </picture></span> <span class="menu-title">Buy</span></li>
+    <div class="panel"><div class="link-container-section"><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">BUYER’S GUIDE</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arena/register-your-interest" target="_self">Register Your Interest</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/articles/here-an-easy-guide-to-buying-a-maruti-suzuki-automatic-car" target="_blank" rel="noopener noreferrer">How-to-buy Guide</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/exchange" target="_blank" rel="noopener noreferrer">Exchange Car</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">BOOK</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arena/ebook" target="_self">Book Your Arena Car</a></li><li><a href="https://www.marutisuzuki.com/arena/book-a-test-drive" target="_self">Book Test Drive</a></li><li><a href="https://www.marutisuzuki.com/arena/connect-to-dealer" target="_self">Visit Maruti Suzuki Arena Showroom</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">CAR FINANCING</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe</a></li><li><a href="https://www.marutisuzuki.com/arena/arena-finance" target="_blank" rel="noopener noreferrer">Maruti Suzuki Smart Finance</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">ALLIED SERVICES</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/service/extended-warranty" target="_blank" rel="noopener noreferrer">Extended Warranty</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/insurance" target="_blank" rel="noopener noreferrer">Insurance</a></li><li><a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" rel="noopener noreferrer">Genuine Accessories</a></li>
+      </ul>
+    </div></div></div>
+    <li id="menu-item-4" class="accordion nav-link owners"><span class="icon"><picture>
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1178c68e59f464b1b4db031d35b6d50475ec2fc4e.svg?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1178c68e59f464b1b4db031d35b6d50475ec2fc4e.svg?width=750&amp;format=webply&amp;optimize=medium">
+          <source type="image/svg+xml" srcset="https://www.marutisuzuki.com/common/media_1178c68e59f464b1b4db031d35b6d50475ec2fc4e.svg?width=2000&amp;format=svg&amp;optimize=medium" media="(min-width: 600px)">
+          <img loading="lazy" alt="Owners" src="./ms_files/media_1178c68e59f464b1b4db031d35b6d50475ec2fc4e.svg">
+        </picture></span> <span class="menu-title">Owners</span></li>
+    <div class="panel"><div class="link-container-section"><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">SERVICE HUB</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/service/book-service-appointment" target="_blank" rel="noopener noreferrer">Book Arena Car Service Appointment</a></li><li><a href="https://www.marutisuzuki.com/maruti-authorized-service-station" target="_blank" rel="noopener noreferrer">Arena Service Centre Locator</a></li><li><a href="https://www.marutisuzuki.com/service" target="_blank" rel="noopener noreferrer">View All Arena Car Services</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">PARTS AND ACCESSORIES</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" rel="noopener noreferrer">Genuine Accessories</a></li><li><a href="https://www.marutisuzuki.com/genuine-parts" target="_blank" rel="noopener noreferrer">Genuine Parts</a></li>
+      </ul>
+    </div><div class="link-grid-column link-column-vertical">
+      
+        <p class="accordian-item link-column__heading">LOYALTY &amp; SUPPORT</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/corporate/technology/suzuki-connect" target="_blank" rel="noopener noreferrer">Suzuki Connect</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/maruti-suzuki-rewards" target="_blank" rel="noopener noreferrer">Maruti Suzuki Rewards</a></li>
+      </ul>
+    </div></div></div>
+    <li id="menu-item-5" class="accordion nav-link arena world"><span class="icon"><picture>
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1eefc7716c786ac955562526fa35a616ad533bf09.svg?width=2000&amp;format=webply&amp;optimize=medium" media="(min-width: 600px)">
+          <source type="image/webp" srcset="https://www.marutisuzuki.com/common/media_1eefc7716c786ac955562526fa35a616ad533bf09.svg?width=750&amp;format=webply&amp;optimize=medium">
+          <source type="image/svg+xml" srcset="https://www.marutisuzuki.com/common/media_1eefc7716c786ac955562526fa35a616ad533bf09.svg?width=2000&amp;format=svg&amp;optimize=medium" media="(min-width: 600px)">
+          <img loading="lazy" alt="Arena World" src="./ms_files/media_1eefc7716c786ac955562526fa35a616ad533bf09.svg">
+        </picture></span> <span class="menu-title">Arena World</span></li>
+    <div class="panel"><div class="link-container-section"><div class="link-grid-column link-column-horizontal">
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arenaworld/campaigns" target="_blank" rel="noopener noreferrer">Campaigns</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/events" target="_blank" rel="noopener noreferrer">Events</a></li><li><a href="https://www.marutisuzuki.com/arenaworld/reviews" target="_blank" rel="noopener noreferrer">Reviews</a></li><li><a href="https://www.marutisuzuki.com/service" target="_blank" rel="noopener noreferrer">Services</a></li><li><a href="https://www.marutisuzuki.com/arenaworld" target="_blank" rel="noopener noreferrer">Tips &amp; Posts</a></li>
+      </ul>
+    </div></div></div>
+    <li><a href="https://www.marutisuzuki.com/corporate/reach-us" class="user__account--link reach us" target="_blank" rel="noopener noreferrer">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/media_1afaa3496abba55897aa553a3ad2ceaca4da34ff5.svg" loading="lazy" alt="Reach Us">
+                </span>
+                Reach Us
+            </a></li><li><a href="https://www.marutisuzuki.com/arena/user/assistance-support" class="user__account--link profile" target="_self">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/media_13b57ab8376192c7cb827e1fed7ceef1bb8dcaf60.svg" loading="lazy" alt="Profile">
+                </span>
+                Profile
+            </a></li><li><div class="user__account--link sign-in-btn">
+                <span class="user__account__list-icon">
+                    <img src="./ms_files/signin.svg" loading="lazy" alt="Sign in / Sign Up">
+                </span>
+                <button type="button" data-sign-out-text="Sign Out">Sign in / Sign Up</button>
+            </div></li><li><div class="contact-wrapper"><div class="contact block" data-block-name="contact" data-block-status="loaded"><div class="contact_wrp_arena user__contact header">
+      <p class="user__contact-title">Contact us</p>
+      
+      <div class="user__contact__icons">
+        
+                <a href="https://www.marutisuzuki.com/arena?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=13799391098_ao&amp;utm_term=marutisuzuki%20com&amp;utm_content=c&amp;utm_network=g&amp;gad_source=1&amp;gad_campaignid=13799391098&amp;gbraid=0AAAAADAR9LM0EK662dXIqFjbKU0hB6Smz&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ6JfrQ-kfcJMIr1kshZr2l0kNdZN6gv9gBo8miP5MfDP7YN_BhN-waAgKNEALw_wcB#" class="user__contact--icon phone" onclick="event.preventDefault(); this.closest(&#39;.contact&#39;).querySelector(&#39;.contact-toggle-box&#39;).classList.toggle(&#39;hidden&#39;)">
+                  <span class="sr-only">phone</span>
+                  <img src="./ms_files/phone.svg" alt="phone" loading="lazy">
+                </a>
+                <div class="hidden&gt;18001021800&lt;/div&gt;
+                &lt;div class=" hidden=""></div>
+              
+                <a href="https://wa.me/919289311487?text=Hi" target="_blank" class="user__contact--icon whatsapp" rel="noopener noreferrer">
+                  <span class="sr-only">WhatsApp</span>
+                  <img src="./ms_files/whatsapp.svg" alt="WhatsApp" loading="lazy">
+                </a>
+              
+                <a href="mailto:contact@maruti.co.in" class="user__contact--icon email">
+                  <span class="sr-only">email</span>
+                  <img src="./ms_files/mail.svg" alt="email" loading="lazy">
+                </a>
+              
+      </div>
+      
+      <div class="hidden contact-toggle-box"><div class="user__contact__icon-call_container">
+        <a href="tel:18001021800" class="primary-telephone">18001021800</a>
+        
+        <a href="tel:" class="secondary-telephone"></a>
+      </div></div>
+    </div>
+  </div></div></li></ul>
+    </div>
+  </div></div></header>
+    <main>
+      <div class="section banner-carousel-container" data-section-status="loaded" style="">
+        
+      <div class="banner-carousel-wrapper"><div class="banner-carousel block" data-block-name="banner-carousel" data-block-status="loaded"><div class="hero-banner-carousel__container" data-item-length="1">
+        <div class="hero-banner-carousel__carousel fade-carousel__wrapper">
+            <div class="hero-banner-carousel__slides carousel__slides"><div data-slide-index="0" class="carousel__slide carousel__slide--active">
+          <img src="./ms_files/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg" alt="" class="hidden" loading="eager">
+          <div id="video-nf4zhbyku" data-mob-name="MicrosoftTeams-video.mp4" data-desk-name="MARUTI_SABER_20SEC A_CLEAN MASTER_020925.mp4" data-mob-video-url="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:eb124633-d10c-4b0a-88e4-538c929ff01d/play" data-desk-video-url="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:22965a1e-3ca7-4fda-a617-972c34374246/play" data-desk-poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:fd2fe3dc-c7bc-43ed-b269-7bb7d48ac5c4/as/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg?height=1152&amp;width=2000&amp;id=1&amp;preferwebp=true" data-mob-poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:e0fa3ae0-2fc3-4a6d-8002-d17ae4c6f568/as/MicrosoftTeams-frame.jpg?height=850&amp;width=750&amp;id=1&amp;preferwebp=true" poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:fd2fe3dc-c7bc-43ed-b269-7bb7d48ac5c4/as/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg?height=1152&amp;width=2000&amp;id=1&amp;preferwebp=true" preload="none" playsinline="true" loop="true" autoplay="true" muted="true" class="hero-banner-video video-js banner-carousel__video video-nf4zhbyku-dimensions vjs-fill vjs-controls-disabled vjs-workinghover vjs-v8 vjs-has-started vjs-user-inactive vjs-paused" tabindex="-1" role="region" lang="en" translate="no" aria-label="Video Player"><video class="vjs-tech" muted="muted" autoplay="" playsinline="playsinline" preload="auto" poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:fd2fe3dc-c7bc-43ed-b269-7bb7d48ac5c4/as/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg?height=1152&amp;width=2000&amp;id=1&amp;preferwebp=true" data-mob-poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:e0fa3ae0-2fc3-4a6d-8002-d17ae4c6f568/as/MicrosoftTeams-frame.jpg?height=850&amp;width=750&amp;id=1&amp;preferwebp=true" data-desk-poster="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:fd2fe3dc-c7bc-43ed-b269-7bb7d48ac5c4/as/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg?height=1152&amp;width=2000&amp;id=1&amp;preferwebp=true" data-desk-video-url="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:22965a1e-3ca7-4fda-a617-972c34374246/play" data-mob-video-url="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:eb124633-d10c-4b0a-88e4-538c929ff01d/play" data-desk-name="MARUTI_SABER_20SEC A_CLEAN MASTER_020925.mp4" data-mob-name="MicrosoftTeams-video.mp4" id="video-nf4zhbyku_html5_api" tabindex="-1" role="application" src="blob:https://www.marutisuzuki.com/c68911fc-daef-4a03-9eb0-77fb61723905"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" alt="" src="./ms_files/MARUTI_SABER_20SEC-A_CLEAN-MASTER-Frame.jpg"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-85"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-86"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true" style="inset-inline: 195px;"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button vjs-paused" type="button" title="Play" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><button class="vjs-skip-backward-undefined vjs-control vjs-button vjs-hidden" type="button" title="Skip Backward" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Skip Backward</span></button><button class="vjs-skip-forward-undefined vjs-control vjs-button vjs-hidden" type="button" title="Skip Forward" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Skip Forward</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-0" type="button" title="Unmute" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Unmute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="0%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" role="presentation">0:01</span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" role="presentation">0:20</span></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="6.07" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-valuetext="0:01 of 0:20"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">100.00%</span></span><div data-start="0.08" data-end="20.08" style="left: 0.4%; width: 99.6%;"></div></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 6.07%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:01</div></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type&nbsp;</span>LIVE</div></div><button class="vjs-seek-to-live-control vjs-control" type="button" title="Seek to live, currently behind live" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Seek to live, currently behind live</span><span class="vjs-seek-to-live-text" aria-hidden="true">LIVE</span></button><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">0:19</span></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-video-nf4zhbyku_component_344">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-video-nf4zhbyku_component_344"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Chapters" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Chapters</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Descriptions" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Descriptions</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">descriptions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-disabled="false"><span class="vjs-menu-item-text">captions settings</span><span class="vjs-control-text" aria-live="polite">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Audio Track" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Audio Track</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected vjs-main-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">eng</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button" title="Picture-in-Picture" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="video-nf4zhbyku_component_562_description" aria-hidden="true" aria-label="Modal Window" role="dialog" aria-live="polite"><p class="vjs-modal-dialog-description vjs-control-text" id="video-nf4zhbyku_component_562_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" tabindex="-1" aria-describedby="video-nf4zhbyku_component_568_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog" aria-live="polite"><p class="vjs-modal-dialog-description vjs-control-text" id="video-nf4zhbyku_component_568_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg vjs-track-setting"><legend id="captions-text-legend-video-nf4zhbyku_component_568">Text</legend><span class="vjs-text-color"><label id="captions-foreground-color-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_595">Color</label><select id="vjs_select_595" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568"><option id="captions-foreground-color-video-nf4zhbyku_component_568-White" value="#FFF" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-White">White</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Black" value="#000" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Black">Black</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Red" value="#F00" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Red">Red</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Green" value="#0F0" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Green">Green</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Blue" value="#00F" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Blue">Blue</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Yellow" value="#FF0" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Yellow">Yellow</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Magenta" value="#F0F" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Magenta">Magenta</option><option id="captions-foreground-color-video-nf4zhbyku_component_568-Cyan" value="#0FF" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568 captions-foreground-color-video-nf4zhbyku_component_568-Cyan">Cyan</option></select></span><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_600">Opacity</label><select id="vjs_select_600" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-opacity-video-nf4zhbyku_component_568"><option id="captions-foreground-opacity-video-nf4zhbyku_component_568-Opaque" value="1" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-opacity-video-nf4zhbyku_component_568 captions-foreground-opacity-video-nf4zhbyku_component_568-Opaque">Opaque</option><option id="captions-foreground-opacity-video-nf4zhbyku_component_568-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-video-nf4zhbyku_component_568 captions-foreground-opacity-video-nf4zhbyku_component_568 captions-foreground-opacity-video-nf4zhbyku_component_568-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg vjs-track-setting"><legend id="captions-background-video-nf4zhbyku_component_568">Text Background</legend><span class="vjs-bg-color"><label id="captions-background-color-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_610">Color</label><select id="vjs_select_610" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568"><option id="captions-background-color-video-nf4zhbyku_component_568-Black" value="#000" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Black">Black</option><option id="captions-background-color-video-nf4zhbyku_component_568-White" value="#FFF" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-White">White</option><option id="captions-background-color-video-nf4zhbyku_component_568-Red" value="#F00" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Red">Red</option><option id="captions-background-color-video-nf4zhbyku_component_568-Green" value="#0F0" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Green">Green</option><option id="captions-background-color-video-nf4zhbyku_component_568-Blue" value="#00F" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Blue">Blue</option><option id="captions-background-color-video-nf4zhbyku_component_568-Yellow" value="#FF0" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Yellow">Yellow</option><option id="captions-background-color-video-nf4zhbyku_component_568-Magenta" value="#F0F" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Magenta">Magenta</option><option id="captions-background-color-video-nf4zhbyku_component_568-Cyan" value="#0FF" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568 captions-background-color-video-nf4zhbyku_component_568-Cyan">Cyan</option></select></span><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_615">Opacity</label><select id="vjs_select_615" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568"><option id="captions-background-opacity-video-nf4zhbyku_component_568-Opaque" value="1" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568-Opaque">Opaque</option><option id="captions-background-opacity-video-nf4zhbyku_component_568-SemiTransparent" value="0.5" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-video-nf4zhbyku_component_568-Transparent" value="0" aria-labelledby="captions-background-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568 captions-background-opacity-video-nf4zhbyku_component_568-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window vjs-track-setting"><legend id="captions-window-video-nf4zhbyku_component_568">Caption Area Background</legend><span class="vjs-window-color"><label id="captions-window-color-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_625">Color</label><select id="vjs_select_625" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568"><option id="captions-window-color-video-nf4zhbyku_component_568-Black" value="#000" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Black">Black</option><option id="captions-window-color-video-nf4zhbyku_component_568-White" value="#FFF" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-White">White</option><option id="captions-window-color-video-nf4zhbyku_component_568-Red" value="#F00" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Red">Red</option><option id="captions-window-color-video-nf4zhbyku_component_568-Green" value="#0F0" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Green">Green</option><option id="captions-window-color-video-nf4zhbyku_component_568-Blue" value="#00F" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Blue">Blue</option><option id="captions-window-color-video-nf4zhbyku_component_568-Yellow" value="#FF0" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Yellow">Yellow</option><option id="captions-window-color-video-nf4zhbyku_component_568-Magenta" value="#F0F" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Magenta">Magenta</option><option id="captions-window-color-video-nf4zhbyku_component_568-Cyan" value="#0FF" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568 captions-window-color-video-nf4zhbyku_component_568-Cyan">Cyan</option></select></span><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-video-nf4zhbyku_component_568" class="vjs-label" for="vjs_select_630">Opacity</label><select id="vjs_select_630" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568"><option id="captions-window-opacity-video-nf4zhbyku_component_568-Transparent" value="0" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568-Transparent">Transparent</option><option id="captions-window-opacity-video-nf4zhbyku_component_568-SemiTransparent" value="0.5" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-video-nf4zhbyku_component_568-Opaque" value="1" aria-labelledby="captions-window-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568 captions-window-opacity-video-nf4zhbyku_component_568-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-video-nf4zhbyku_component_568">Font Size</legend><select id="vjs_select_645" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568"><option id="vjs-track-option-646-50" value="0.50" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-646-50">50%</option><option id="vjs-track-option-647-75" value="0.75" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-647-75">75%</option><option id="vjs-track-option-648-100" value="1.00" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-648-100">100%</option><option id="vjs-track-option-649-125" value="1.25" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-649-125">125%</option><option id="vjs-track-option-650-150" value="1.50" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-650-150">150%</option><option id="vjs-track-option-651-175" value="1.75" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-651-175">175%</option><option id="vjs-track-option-652-200" value="2.00" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-652-200">200%</option><option id="vjs-track-option-653-300" value="3.00" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-653-300">300%</option><option id="vjs-track-option-654-400" value="4.00" aria-labelledby="captions-font-size-video-nf4zhbyku_component_568 vjs-track-option-654-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="captions-edge-style-video-nf4zhbyku_component_568">Text Edge Style</legend><select id="vjs_select_664" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568"><option id="vjs-track-option-665-None" value="none" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568 vjs-track-option-665-None">None</option><option id="vjs-track-option-666-Raised" value="raised" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568 vjs-track-option-666-Raised">Raised</option><option id="vjs-track-option-667-Depressed" value="depressed" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568 vjs-track-option-667-Depressed">Depressed</option><option id="vjs-track-option-668-Uniform" value="uniform" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568 vjs-track-option-668-Uniform">Uniform</option><option id="vjs-track-option-669-Dropshadow" value="dropshadow" aria-labelledby="captions-edge-style-video-nf4zhbyku_component_568 vjs-track-option-669-Dropshadow">Drop shadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-video-nf4zhbyku_component_568">Font Family</legend><select id="vjs_select_679" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568"><option id="vjs-track-option-680-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-680-ProportionalSansSerif">Proportional Sans-Serif</option><option id="vjs-track-option-681-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-681-MonospaceSansSerif">Monospace Sans-Serif</option><option id="vjs-track-option-682-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-682-ProportionalSerif">Proportional Serif</option><option id="vjs-track-option-683-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-683-MonospaceSerif">Monospace Serif</option><option id="vjs-track-option-684-Casual" value="casual" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-684-Casual">Casual</option><option id="vjs-track-option-685-Script" value="script" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-685-Script">Script</option><option id="vjs-track-option-686-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-video-nf4zhbyku_component_568 vjs-track-option-686-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button class="vjs-default-button" type="button" title="restore all settings to the default values" aria-disabled="false">Reset</button><button class="vjs-done-button" type="button" title="restore all settings to the default values" aria-disabled="false">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" title="Close Modal Dialog" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div></div>
+          <div class="content-overlay">
+          <div class="container">
+            <div class="pre-title"></div>
+            <div class="logo-image"><img src="./ms_files/New-Saber-logo-with-tagline" alt="VictoriscLogo Img"></div>
+            <div class="ex-showroom-details">
+              <div class="ex-showroom-text">
+                <span></span></div>
+              <div class="ex-showroom-price" data-car-model="EC"><span></span></div>
+            </div>
+            <div class="carousal-cta">
+              <a href="https://www.marutisuzuki.com/arena/victoris" title="Explore" class="button button-primary-white" target="_self">Explore</a>
+              <a href="https://www.marutisuzuki.com/arena/configurator/victoris" title="Build your Own" class="button button-secondary-white" target="_self">Build your Own</a>
+            </div>
+            <div class="term-condition">
+                     <span class="term-condition-text">* T&amp;C apply</span>
+                     <div class="termsConditionPopup"><div>
+              <p>Car images shown are of top variant and for illustration purposes only. Accessories and features may not be part of standard equipment.</p>
+              <p>The content and information available on this website is limited to the sales and services offered by Maruti Suzuki India Limited in the jurisdiction of India only.</p>
+              <p>*Prices/Schemes prevailing at the time of invoice /bill shall be applicable.</p>
+            </div></div>
+            </div> 
+            </div>
+          </div>
+      </div></div>
+        <div class="carousel__ctrl"><div class="container"><div class="carousel__dots"><ul><li class="carousel__dot carousel__dot--active" data-target-index="0"><div class="dot-progress-bar"><div class="dot-progress-fill" style="display: block; width: 6.06619%;"></div></div></li></ul></div><div class="carousel__navigation">
+          <span class="carousel__prev carousel__nav--disabled"></span>
+          <span class="carousel__counter">01/<span class="carousel__totalslide">01</span></span>
+          <span class="carousel__next"></span>
+      </div></div></div></div>
+    </div>
+    </div></div></div>
+      <div class="section slider-container" data-section-status="loaded" style="">
+        
+      <div class="slider-wrapper"><div class="slider block" data-block-name="slider" data-block-status="loaded"><div class="g-container container__slider">
+     <div class="slider-content">
+        <h2 id="arena-in-gear" class="slider-title">Arena In-Gear</h2>
+     </div>
+     <div class="g-row teaser-content">
+         <div class="button__content">
+         <button class="nav-arrow prev" aria-label="Previous"></button>
+         <button class="nav-arrow next" aria-label="Next"></button>
+         </div>
+         <div class="teaser__cards" style="transition: none; transform: translateX(0px);">
+              
+         <div class="teaser__card g-lg-4 g-md-4" style="opacity: 1;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/genuine-accessories" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:77034e3d-707e-48ca-b298-c10dc8e5f405/as/Genuine-accessories_high-quality-copy-(1).png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Car accessories available for customization" src="./ms_files/Genuine-accessories_high-quality-copy-(1).png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">Personalize Your <br>Driving Experience</h3></div><div class="teaser__description"><p>Discover accessories that match your style and needs</p></div></div><div class="teaser-arrow"></div></div></div></a></div><div class="teaser__card g-lg-4 g-md-4" style="opacity: 1;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/service" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:6b7cebb4-6dc5-4b2e-be09-cdbe150d4418/as/Service.png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Car servicing and maintenance options." src="./ms_files/Service.png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">Keep Your Car in Best <br>of Health</h3></div><div class="teaser__description"><p>Convenient, reliable, and professional car servicing options</p></div></div><div class="teaser-arrow"></div></div></div></a></div><div class="teaser__card g-lg-4 g-md-4" style="opacity: 1;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/arena/arena-finance" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:dfcb2b1a-e545-41ae-a7da-52f3fc8fa856/as/Easy-ways-to-own-your-car.png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Smart Finance options for car buyers" src="./ms_files/Easy-ways-to-own-your-car.png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">Easy ways to own <br>your car</h3></div><div class="teaser__description"><p>Explore various finance options</p></div></div><div class="teaser-arrow"></div></div></div></a></div><div class="teaser__card g-lg-4 g-md-4" style="opacity: 1;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/corporate/technology/suzuki-connect" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:940b151e-3d9d-4fbd-9829-fde996e598ac/as/Ertiga-Suzuki-Connect.png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Suzuki Connect app interface for connected car features" src="./ms_files/Ertiga-Suzuki-Connect.png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">Your Car, Your Control, just a <br>tap away</h3></div><div class="teaser__description"><p>Tap into Tomorrow with 40+ Connected Car Features</p></div></div><div class="teaser-arrow"></div></div></div></a></div><div class="teaser__card g-lg-4 g-md-4" style="opacity: 0.3;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/arena/victoris" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:e307a0f4-a10a-46e8-b726-e160194d5a21/as/Desk-Arena-Home-Victoris-2nd-Fold-Cards.png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Victoris new car model launch announcement" src="./ms_files/Desk-Arena-Home-Victoris-2nd-Fold-Cards.png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">For the ones who have it all, Presenting VICTORIS Got <br>it all</h3></div><div class="teaser__description"><p>Experience innovation and elevate your drive</p></div></div><div class="teaser-arrow"></div></div></div></a></div><div class="teaser__card g-lg-4 g-md-4" style="opacity: 0.3;">
+                           
+                           
+                       <a href="https://www.marutisuzuki.com/genuine-parts" title="" class="" target="_blank" rel="noopener noreferrer"><div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:5e0c41a7-ac30-4309-8d1b-7f3602457f68/as/Genuine-parts_desktop_804x382.png?width=2000&amp;id=1&amp;preferwebp=true" height="382" width="804"><img loading="lazy" alt="Genuine car parts for maintenance and repairs" src="./ms_files/Genuine-parts_desktop_804x382.png"></picture></div><div class="teaser__content"><div class="teaser__info">
+                                   
+                                   
+                                   
+                               <div class="title-arrow"><div class="teaser__title"><h3 class="card-title">Genuine Parts for a <br>Reliable Drive</h3></div><div class="teaser__description"><p>Find high-quality, authentic parts for your car</p></div></div><div class="teaser-arrow"></div></div></div></a></div></div>
+     </div>
+ </div>
+ </div></div></div>
+      <div class="section arena-help-me-select-container" data-section-status="loaded" style="">
+        
+      <div class="arena-help-me-select-wrapper"><div class="arena-help-me-select block g-container" data-block-name="arena-help-me-select" data-block-status="loaded"><div class="teaser-content">
+                <div class="teaser__cards">
+                     <div class="teaser__card">
+                           <div class="teaser__image"><picture><source media="(min-width: 600px)" srcset="https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:362c1242-2202-41ec-b3a6-de7d5023d6da/as/Helpme_select_deskv1.png?width=2000&amp;id=1&amp;preferwebp=true" height="968" width="2000"><img loading="lazy" alt="Maruti-Suzuki-Cars-Online" src="./ms_files/Helpme_select_deskv1.png"></picture></div>
+                           <div class="teaser__content">
+                               <div class="teaser__info">
+                                   <div class="teaser__pretitle"><p>New Feature</p></div>
+                                   <div class="teaser__title"><h2 id="need-assistance-to-choose-the-right-car">Need Assistance<br>to Choose the Right Car?</h2></div>
+                                   <div class="teaser__description"><h3>Discover your Ideal Maruti Suzuki Arena car in Under 3 Minutes</h3></div>
+                               </div>
+                               
+    <div class="teaser__actions">
+      <a href="https://www.marutisuzuki.com/arena/help-me-select" title="Help Me Select" class="button button-primary-blue" target="_self">Help Me Select</a>
+      
+    </div>
+  
+                           </div>
+                       </div>
+                </div>
+        </div>
+        </div></div></div>
+      <div class="section highlights-container" data-section-status="loaded" style="">
+        
+      <div class="highlights-wrapper g-container"><div class="highlights block" data-block-name="highlights" data-block-status="loaded"><div class="highlight__card gradient1"><div class="highlight__content">
+            <div class="highlight__info">
+              
+            <div class="highlight-container">
+              <div class="highlight__top">
+                  <span class="highlightIcon"></span>
+                  <div class="highlight__top__description"><h3>Start Your Journey Here</h3></div>
+                  </div>
+              <a href="https://www.marutisuzuki.com/arena/ebook" target="_self" class="bottom-section">
+              <span class="saperater"></span>
+                 <div class="bottom__content">
+                 <div class="btm-title">
+                <h4 class="h-title"> Book Now </h4>
+                <span class="arrow-link"></span>
+                </div>
+                <div class="highlight__bottom__description g-xl-2"><p>Drive into adventure. Book your car with us.</p></div>
+                </div>
+                <div class="backdround-overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div></div><div class="highlight__card gradient2"><div class="highlight__content">
+            <div class="highlight__info">
+              
+            <div class="highlight-container">
+              <div class="highlight__top">
+                  <span class="highlightIcon"></span>
+                  <div class="highlight__top__description"><h3>Experience Your Dream Car</h3></div>
+                  </div>
+              <a href="https://www.marutisuzuki.com/arena/book-a-test-drive" target="_self" class="bottom-section">
+              <span class="saperater"></span>
+                 <div class="bottom__content">
+                 <div class="btm-title">
+                <h4 class="h-title"> Test Drive </h4>
+                <span class="arrow-link"></span>
+                </div>
+                <div class="highlight__bottom__description g-xl-2"><p>Book a slot and get behind the wheel.</p></div>
+                </div>
+                <div class="backdround-overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div></div><div class="highlight__card gradient3"><div class="highlight__content">
+            <div class="highlight__info">
+              
+            <div class="highlight-container">
+              <div class="highlight__top">
+                  <span class="highlightIcon"></span>
+                  <div class="highlight__top__description"><h3>Keep Your Car in Best of Health</h3></div>
+                  </div>
+              <a href="https://www.marutisuzuki.com/service/book-service-appointment" target="_blank" class="bottom-section" rel="noopener noreferrer">
+              <span class="saperater"></span>
+                 <div class="bottom__content">
+                 <div class="btm-title">
+                <h4 class="h-title"> Book Appointment </h4>
+                <span class="arrow-link"></span>
+                </div>
+                <div class="highlight__bottom__description g-xl-2"><p>Schedule car service near you</p></div>
+                </div>
+                <div class="backdround-overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div></div><div class="highlight__card gradient4"><div class="highlight__content">
+            <div class="highlight__info">
+              
+            <div class="highlight-container">
+              <div class="highlight__top">
+                  <span class="highlightIcon"></span>
+                  <div class="highlight__top__description"><h3>Personalize Your Driving Experience</h3></div>
+                  </div>
+              <a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" class="bottom-section" rel="noopener noreferrer">
+              <span class="saperater"></span>
+                 <div class="bottom__content">
+                 <div class="btm-title">
+                <h4 class="h-title"> Genuine Accessories </h4>
+                <span class="arrow-link"></span>
+                </div>
+                <div class="highlight__bottom__description g-xl-2"><p>Elevate your car-game</p></div>
+                </div>
+                <div class="backdround-overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div></div></div></div></div>
+      <div class="section nearest-dealer-container" data-section-status="loaded" style="">
+        
+        
+      <div class="nearest-dealer-wrapper"><div class="nearest-dealer block" data-block-name="nearest-dealer" data-block-status="loaded"><div class="g-container container__dealers">
+          <div class="dealers__content">
+            <div class="dealers__headings">
+              <div class="teaser__title"><h2 id="nearest-maruti-suzuki-arena-showroom">Nearest Maruti Suzuki <br> Arena Showroom</h2> </div>
+              <div class="teaser__subtitle"><h3>We found 3 showrooms near Defence Head Qrs</h3></div>
+            </div>
+            <div class="dealers__actions">
+              <a href="https://www.marutisuzuki.com/arena/connect-to-dealer" title="Explore All Dealers" class="button button-primary-blue" target="_self">Explore All Dealers</a>
+            </div>
+          </div>
+        <div class="dealer__list__container"><div class="g-lg-4 g-md-4 dealer__card"><div class="dealership__image"><img src="./ms_files/Arena_Card_Small.jpeg" alt="" class="dealer__image"></div><div class="dealership__top__info" style="height: 72px;"><p class="dealer__name">Competent Automobiles Co. Ltd.</p><p class="dealer__distance">2.27 Km Away</p></div><p class="dealer__address">F- 14, Competent House Middle Circle Connaught Place</p><a href="https://www.google.com/maps/dir/current+location/28.6312588231,77.2212941762" target="self" class="dealer-link">Navigate</a></div><div class="g-lg-4 g-md-4 dealer__card"><div class="dealership__image"><img src="./ms_files/Arena_Card_Small.jpeg" alt="" class="dealer__image"></div><div class="dealership__top__info" style="height: 72px;"><p class="dealer__name">T.r. Sawhney Motors Pvt Ltd</p><p class="dealer__distance">3.97 Km Away</p></div><p class="dealer__address">Main Ring Road Inder Prastha New Delhi</p><a href="https://www.google.com/maps/dir/current+location/28.6416967317,77.2345291795" target="self" class="dealer-link">Navigate</a></div><div class="g-lg-4 g-md-4 dealer__card"><div class="dealership__image"><img src="./ms_files/Arena_Card_Small.jpeg" alt="" class="dealer__image"></div><div class="dealership__top__info" style="height: 72px;"><p class="dealer__name">Poddar Car World Pvt Ltd</p><p class="dealer__distance">4.50 Km Away</p></div><p class="dealer__address">Meli Bazar, Kalimpong, Domsong Forest, Dist. Kalimpong, Jalpaiguri, West Bengal</p><a href="https://www.google.com/maps/dir/current+location/27.0876615304,88.4552908625" target="self" class="dealer-link">Navigate</a></div></div></div>
+      </div></div></div>
+      <div class="section schema-block-container" data-section-status="loaded" style="">
+        
+        
+      <div class="schema-block-wrapper"><div class="schema-block block" data-block-name="schema-block" data-block-status="loaded"></div></div></div>
+    </main>
+    <footer class="footer-wrapper"><div class="footer block g-container" data-block-name="footer" data-block-status="loaded"><div class="row footer__columns footer__link-grid-container"><div class="link-column-container column column-0"><div class="link-column-wrapper"><div class="link-column block" data-block-name="link-column" data-block-status="loaded"><div class="link-grid-column link-column-vertical">
+      <h3 id="arena---cars" class="accordian-item link-column__heading column__heading">Arena - Cars</h3>
+      <ul class="content links-container accordian-content collpsable" style="height: 340px;">
+        <li><a href="https://www.marutisuzuki.com/arena/alto-k10" target="_self">Alto</a></li><li><a href="https://www.marutisuzuki.com/arena/s-presso" target="_self">S-Presso</a></li><li><a href="https://www.marutisuzuki.com/arena/celerio" target="_self">Celerio</a></li><li><a href="https://www.marutisuzuki.com/arena/eeco" target="_self">Eeco</a></li><li><a href="https://www.marutisuzuki.com/arena/wagon-r" target="_self">WagonR</a></li><li><a href="https://www.marutisuzuki.com/swift" target="_blank" rel="noopener noreferrer">Swift</a></li><li><a href="https://www.marutisuzuki.com/arena/dzire" target="_self">Dzire</a></li><li><a href="https://www.marutisuzuki.com/arena/victoris" target="_self">Victoris</a></li><li><a href="https://www.marutisuzuki.com/arena/brezza" target="_self">Brezza</a></li><li><a href="https://www.marutisuzuki.com/arena/ertiga" target="_self">Ertiga</a></li><li><a href="https://www.marutisuzuki.com/tour" target="_self">Tour</a></li>
+      </ul>
+    </div></div></div></div><div class="link-column-container column column-1"><div class="link-column-wrapper"><div class="link-column block" data-block-name="link-column" data-block-status="loaded"><div class="link-grid-column link-column-vertical">
+      <h3 id="services-and-parts" class="accordian-item link-column__heading column__heading">Services and Parts</h3>
+      <ul class="content links-container accordian-content collpsable" style="height: 212px;">
+        <li><a href="https://www.marutisuzuki.com/service/book-service-appointment" target="_blank" rel="noopener noreferrer">Book Arena Car Service Appointment</a></li><li><a href="https://www.marutisuzuki.com/service/customerconveniencepackage" target="_blank" rel="noopener noreferrer">Customer Convenience Package</a></li><li><a href="https://www.marutisuzuki.com/genuine-accessories" target="_blank" rel="noopener noreferrer">Genuine Accessories</a></li><li><a href="https://www.marutisuzuki.com/genuine-parts" target="_blank" rel="noopener noreferrer">Genuine Parts</a></li><li><a href="https://www.marutisuzuki.com/service/roadside-assistance" target="_blank" rel="noopener noreferrer">Roadside Assistance</a></li><li><a href="https://www.marutisuzuki.com/service/extended-warranty" target="_blank" rel="noopener noreferrer">Extended Warranty</a></li><li><a href="https://www.marutisuzuki.com/service/car-care" target="_blank" rel="noopener noreferrer">Arena Car Manual</a></li>
+      </ul>
+    </div></div></div></div><div class="link-column-container column column-2"><div class="link-column-wrapper"><div class="link-column block" data-block-name="link-column" data-block-status="loaded"><div class="link-grid-column link-column-vertical">
+      <h3 id="more-from-maruti-suzuki" class="accordian-item link-column__heading column__heading">More from Maruti Suzuki</h3>
+      <ul class="content links-container accordian-content collpsable" style="height: 244px;">
+        <li><a href="https://www.marutisuzuki.com/arena/arena-finance" target="_blank" rel="noopener noreferrer">Maruti Suzuki Smart Finance</a></li><li><a href="https://www.marutisuzukidrivingschool.com/" target="_blank" rel="noopener noreferrer">Driving School</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/insurance" target="_blank" rel="noopener noreferrer">Insurance</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/maruti-suzuki-leasing" target="_blank" rel="noopener noreferrer">Leasing</a></li><li><a href="https://www.marutisuzuki.com/more-from-us/maruti-suzuki-rewards" target="_blank" rel="noopener noreferrer">Maruti Suzuki Rewards</a></li><li><a href="https://www.marutisuzukitruevalue.com/" target="_blank" rel="noopener noreferrer">Maruti Suzuki True Value</a></li><li><a href="https://www.marutisuzukicommercial.com/" target="_blank" rel="noopener noreferrer">Maruti Suzuki Commercial</a></li><li><a href="https://www.marutisuzuki.com/" target="_self">Corporate &amp; Institutional Sales</a></li>
+      </ul>
+    </div></div></div></div><div class="link-column-container column column-3"><div class="link-column-wrapper"><div class="link-column block" data-block-name="link-column" data-block-status="loaded"><div class="link-grid-column link-column-vertical">
+      <h3 id="quick-links" class="accordian-item link-column__heading column__heading">Quick Links</h3>
+      <ul class="content links-container accordian-content collpsable" style="height: 180px;">
+        <li><a href="https://www.marutisuzuki.com/service/car-care" target="_self">Car Care</a></li><li><a href="https://www.marutisuzuki.com/arena/connect-to-dealer" target="_self">Arena Showroom Locator</a></li><li><a href="https://www.marutisuzuki.com/arena/book-a-test-drive" target="_self">Book a Test Drive</a></li><li><a href="https://www.marutisuzuki.com/arenaworld" target="_blank" rel="noopener noreferrer">ARENA World</a></li><li><a href="https://www.marutisuzuki.com/corporate/reach-us/business-opportunities" target="_blank" rel="noopener noreferrer">Maruti Suzuki Partner</a></li><li><a href="https://www.nexaexperience.com/" target="_blank" rel="noopener noreferrer">NEXA</a></li>
+      </ul>
+    </div></div></div></div><div class="section arena footer-center-section contact-container column column-4 contact-section" data-section-status="loaded" style="">
+  
+  
+  
+  
+  
+<div class="default-content-wrapper"><h3 id="contact-us" class="column__heading">Contact Us</h3><p class="collpsable" style="height: 22px;"><strong>Toll Free Number</strong></p><p class="button-container collpsable" style="height: 21px;"><a href="tel:1800-102-1800" title="1800-102-1800" class="button">1800-102-1800</a></p></div><div class="contact-wrapper collpsable" style="height: 54px;"><div class="contact block" data-block-name="contact" data-block-status="loaded"><div class="contact_wrp_arena user__contact header">
+      <h4 class="user__contact-title">Find us on:</h4>
+      
+      <div class="user__contact__icons">
+        
+                <a href="https://www.facebook.com/MSArenaOfficial" target="_blank" class="user__contact--icon out-default" title="Facebook" rel="noopener noreferrer">
+                  <span class="sr-only">Facebook</span>
+                  <img src="./ms_files/facebook.svg" alt="Facebook" loading="lazy">
+                </a>
+              
+                <a href="https://x.com/Maruti_Corp" target="_blank" class="user__contact--icon out-default" title="X" rel="noopener noreferrer">
+                  <span class="sr-only">X</span>
+                  <img src="./ms_files/twitter.svg" alt="X" loading="lazy">
+                </a>
+              
+                <a href="https://www.youtube.com/user/MarutiSuzukiCorp" target="_blank" class="user__contact--icon out-default" title="YouTube" rel="noopener noreferrer">
+                  <span class="sr-only">YouTube</span>
+                  <img src="./ms_files/youtube.svg" alt="YouTube" loading="lazy">
+                </a>
+              
+                <a href="https://www.instagram.com/marutisuzukiofficial/" target="_blank" class="user__contact--icon out-default" title="Instagram" rel="noopener noreferrer">
+                  <span class="sr-only">Instagram</span>
+                  <img src="./ms_files/instagram.svg" alt="Instagram" loading="lazy">
+                </a>
+              
+                <a href="https://in.linkedin.com/company/maruti-udyog-limited" target="_blank" class="user__contact--icon out-default" title="LinkedIn" rel="noopener noreferrer">
+                  <span class="sr-only">LinkedIn</span>
+                  <img src="./ms_files/linkedin.svg" alt="LinkedIn" loading="lazy">
+                </a>
+              
+                <a href="https://api.whatsapp.com/send/?phone=919289311487&amp;text=Hi&amp;type=phone_number&amp;app_absent=0" target="_blank" class="user__contact--icon out-default" title="WhatsApp" rel="noopener noreferrer">
+                  <span class="sr-only">WhatsApp</span>
+                  <img src="./ms_files/whatsapp(1).svg" alt="WhatsApp" loading="lazy">
+                </a>
+              
+      </div>
+      
+      <div class="hidden contact-toggle-box"><div class="user__contact__icon-call_container">
+        <a href="tel:undefined" class="primary-telephone">undefined</a>
+        
+        <a href="tel:undefined" class="secondary-telephone">undefined</a>
+      </div></div>
+    </div>
+  </div></div></div></div><div class="footer__separator"></div><div class="row footer-bottom-section" data-section-status="loaded" style="">
+  
+  
+  
+<div class="columns-wrapper"><div class="columns block columns-2-cols" data-block-name="columns" data-block-status="loaded">
+    <div class="footer__two-column-section">
+      <div>
+        <p>The content and information available on this website is limited to the sales and services offered by Maruti Suzuki India Limited in the jurisdiction of India only.</p>
+        <p>*Prices/Schemes prevailing at the time of invoice /bill shall be applicable.</p>
+        <p>*Caution: Beware of Fake Promotions or Offers</p>
+      </div>
+      <div><p>Please do not believe or engage with any promotional messages (SMS) or Web-link which ask you to click on a link and fill in your details to win a Maruti Suzuki car. These SMS-based offers are fake, and Maruti Suzuki India Limited bears no liability or responsibility whatsoever for any such communication which is fraudulent or misleading in nature.</p></div>
+    </div>
+  </div></div><div class="link-column-wrapper"><div class="link-column block" data-block-name="link-column" data-block-status="loaded"><div class="link-grid-column link-column-horizontal">
+      
+        <p class="accordian-item link-column__heading">MARUTI SUZUKI INDIA LIMITED</p>
+      
+      <ul class="content links-container accordian-content">
+        <li><a href="https://www.marutisuzuki.com/arena/terms-of-use" target="_self">TERMS OF USE</a></li><li><a href="https://www.marutisuzuki.com/arena/privacy-policy" target="_self">DATA PROVIDER CONSENT POLICY</a></li><li><a href="https://www.marutisuzuki.com/sitemap" target="_self">SITE MAP</a></li><li><a href="https://www.marutisuzuki.com/corporate/reach-us" target="_blank" rel="noopener noreferrer">CONTACT US</a></li>
+      </ul>
+    </div></div></div></div></div></footer><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./ms_files/saved_resource.html"></iframe>
+  
+
+</body></html>

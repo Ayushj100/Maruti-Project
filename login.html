@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Bootstrap File/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="Bootstrap File/js/jquery.min.js"></script>
+    <script src="Bootstrap File/js/bootstrap.min.js"></script>
+        
+    
+    <script>
+        function display(){
+            var u=document.getElementById("abc1").value;
+            var p=document.getElementById("abc2").value;
+            if(u=="ciit" && p=="1234"){
+                localStorage.setItem("username",u,"password",p);
+                    window.location.href="http://127.0.0.1:5500/carparts.html";
+            }
+            else if(u=="Ayush" && p=="1111"){
+                localStorage.setItem("username",u,"password",p);
+                window.location.href="http://127.0.0.1:5500/carparts.html";
+            }
+            else if(u=="om" && p=="2222"){
+                localStorage.setItem("username",u,"password",p);
+                window.location.href="http://127.0.0.1:5500/carparts.html";
+            }else if(u=="Aniket" && p=="3333"){
+                localStorage.setItem("username",u,"password",p);
+                window.location.href="http://127.0.0.1:5500/carparts.html";
+            }
+            else if(u=="sales" && p=="sales"){
+                localStorage.setItem("username",u,"password",p);
+                window.location.href="http://127.0.0.1:5500/new1.html";
+            }
+
+            setTimeout(function(){
+window.location.href="http://127.0.0.1:5500/carparts.html";
+            },5000)
+        }
+        
+    </script>
+</head>
+<body style="background-image: url(imgg/bg.jpg);background-size: cover;">
+    <center>
+    <form style="width: 400px;height:500px;border: 1px solid;border-color: white; margin-top: 90px;background-color:white;border-radius: 10px;">
+        <h1 style="font-family:fantasy;"><img src="imgg/maruti-suzuki.png.jpg">Login</h1><br/>
+        <label>USER ID</label><br/>
+        <input type="text" id="abc1" class="form-control" style="width:250px;"/><br/>
+        <label>PASSWORD</label><br/>
+        <input type="text" id="abc2" class="form-control" style="width:250px;"/>
+        <br/><br/>
+        <input type="button" value="Login" class="btn btn-success" onclick="display()"/>
+    </form>  
+    </center>
+     
+</body>
+</html>

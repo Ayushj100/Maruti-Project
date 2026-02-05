@@ -1,0 +1,317 @@
+.contact-wrapper {
+  width: 100%;
+
+  .user__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    .user__contact-title {
+      padding-top: 8px;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 0;
+      font-family: var(--body-font-arena);
+    
+      @media (width >=768px) {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    .user__contact-subTitle {
+      color: var(--primary-black);
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      margin: 0 0 24px;
+    }
+
+    .user__contact__icons {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      
+      a {
+        cursor: pointer;
+      }
+    
+      .user__contact--icon-text {
+        height: 1.5rem;
+        width: 1.5rem;
+        cursor: pointer;
+        &:hover {
+          background: none;
+        }
+      
+        @media((width >=768px) and (width <1200px)) {
+          img {
+            height: 1rem;
+            width: 1rem;
+          }
+        }
+      }
+
+      .phone {
+        border: none;
+        padding: 0;
+      }
+      
+      .primary-telephone,
+      .secondary-telephone,
+      .primary-whatsappno,
+      .primary-email,
+      .secondary-telephone-icon {
+        display: none;
+      }
+    }
+
+    .user__contact__icon-call_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 14px;
+      background: var(--gradients-accent-section-bg-1);
+
+      .primary-telephone,
+      .secondary-telephone {
+        display: block;
+      }
+    
+      a {
+        color: var(--primary-main, #18171A);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+    
+      .separator {
+        background-color: var(--inactive-content);
+        height: 0.875rem;
+        width: 0.0625rem;
+        margin: 0 16px;
+      }
+    }
+  }
+}
+
+@media (width >=768px) {
+  .user__dropdown {
+    .user__contact {
+      .user__contact-title {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .contact-wrapper {
+    .user__contact {
+      gap: 1rem;
+
+      .user__contact__icons {
+        gap: 3rem;
+
+        .user__contact--icon-text {
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .phone,
+        .whatsapp,
+        .email {
+          display: flex;
+          width: auto;
+          height: auto;
+          align-items: center;
+          gap: 8px;
+          color: var(--primary-main-color);
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .btn-wrap {
+          display: flex;
+          gap: 24px;
+          flex-shrink: 0;
+
+          .user__contact--icon-text {
+            margin-right: inherit !important;
+
+            &:first-child {
+              margin-right: -1.5rem;
+            }
+          }
+        }
+
+        .primary-telephone,
+        .secondary-telephone,
+        .primary-whatsappno,
+        .primary-email,
+        .secondary-telephone-icon {
+          display: flex;
+        }
+      }
+
+      .user__contact__icon-call_container {
+        a {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+  
+        .separator {
+          height: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media(width >=1200px) {
+  .contact-wrapper {
+    .user__contact {
+      gap: 1.5rem;
+
+      .user__contact-title {
+        font-size: 1.5rem;
+        line-height: 28px;
+      }
+
+      .user__contact__icon-call_container {
+        a {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+/* static page contact section style */
+.policy-terms-container,
+.terms-of-use-container {
+  .contact-wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 36px;
+  
+    @media(width >=768px) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-bottom: 0;
+    }
+  
+    .contact {
+      background: var(--gradients-accent-section-bg-1);
+      position: relative;
+      padding: 24px 16px;
+  
+      @media(width >=768px) {
+        padding-inline: 50px;
+      }
+  
+      .user__contact {
+        gap: 0;
+
+        .user__contact__icon-call_container {
+          display: none;
+        }
+  
+        .user__contact-title {
+          color: var(--secondary-black);
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          padding: 0;
+          margin: 0 0 8px;
+  
+          @media(width >=768px) {
+            font-size: 24px;
+            line-height: 28px;
+            margin: 0 0 24px;
+          }
+        }
+
+        .user__contact__icons {
+          flex-direction: column;
+          gap: 30px;
+  
+          .user__contact-item {
+            width: 100%;
+          }
+  
+          .label {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            margin-top: 0;
+            margin-bottom: 16px;
+          }
+  
+          .user__contact--icon-text {
+            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            height: auto;
+            color: var(--tertiary-black);
+  
+            a {
+              color: var(--tertiary-black);
+              &:hover {
+                background: none;
+              }
+            }
+  
+            img {
+              height: 20px;
+              width: 20px;
+            }
+  
+          }
+  
+          .btn-wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+  
+            @media(width >=1024px) {
+              justify-content: flex-start;
+            }
+          }
+  
+          @media(width >=768px) {
+            display: grid;
+            flex-direction: column;
+          }
+  
+          @media(width >=1024px) {
+            grid-auto-flow: column;
+            column-gap: 4rem;
+            column-gap: 4rem;
+          }
+        }
+      }
+  
+      .primary-telephone,
+      .secondary-telephone,
+      .primary-whatsappno,
+      .primary-email,
+      .secondary-telephone-icon {
+        display: block;
+      }
+    }
+  }
+} 
